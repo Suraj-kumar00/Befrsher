@@ -7,12 +7,12 @@ import Cartlogo from "../Images/Cart.svg"
 
 function Header() {
   return (
-    <main className='flex w-1512 h-60 border-2 border-green-500 pt-3 pb-2 pr-[2.5625rem] pl-10'>
+    <main className='flex w-1512 h-60 pt-3 pb-2 pr-[2.5625rem] pl-10'>
    
             <img className="h-full" src={Companylogo} alt="companylogo"/>
         
         <div className="flex justify-center items-center ">
-            <div className='flex  items-center border-2 border-slate-900 ml-524 h-[1.6875rem] w-[21.3125rem]'>
+            <div className='flex  items-center  ml-524 h-[1.6875rem] w-[21.3125rem]'>
                     <div className='flex items-center justify-between w-[4.875rem]'>
                         <img className='w-[1.125rem]' src={Home} alt="Home"/>
                         <div className='w-[3.125rem] h=[1.6875rem]'>Home</div>
