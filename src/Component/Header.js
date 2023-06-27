@@ -27,9 +27,9 @@ function Header() {
                     </div>
 
             </div>
-            <div className='flex items-center ml-10'>
-              <img src={Cartlogo} alt="cartlogo"/>
-                <div>Cart</div>
+            <div className='flex items-center ml-10 w-[4.1875rem] h-[1.6875rem]'>
+               <img  className="w-4 h-4" src={Cartlogo} alt="cartlogo"/>
+                <div clasName="w-[2.9375rem] h-[1.6875rem]">Cart</div>
             </div>
             <div className='flex items-center ml-33'>
                 <a href='#'>Become a Seller</a>
