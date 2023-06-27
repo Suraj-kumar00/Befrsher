@@ -7,7 +7,7 @@ import Cartlogo from "../Images/Cart.svg"
 
 function Header() {
   return (
-    <main className='flex w-1512 h-60 border-2 border-green-500'>
+    <main className='flex w-1512 h-60 border-2 border-green-500 pt-3 pb-2 pr-[2.5625rem] pl-10'>
    
             <img className="h-full" src={Companylogo} alt="companylogo"/>
         
@@ -34,8 +34,8 @@ function Header() {
             <div className='flex justify-center text-[#F6f6f6] items-center ml-33 w-[8.75rem] h-10 rounded-[0.3125rem] bg-[#484FA2]'>
                 <a className="flex justify-center items-center h-[1.6875rem] pt-[0.4375rem] pr-[0.6875rem] pb-[0.375rem] pl-2.5" href='#'>Become a Seller</a>
             </div>
-            <div className='flex items-center ml-3'>
-              <a href="#">Signup</a>
+            <div className='flex items-center justify-center ml-3 w-[7.25rem] h-10 rounded-[0.3125rem]  bg-[#C40460] text-[#e7e7e6]'>
+              <a className="flex justify-center items-center   py-3.5 px-7" href="#">Signup</a>
             </div>
 
         </div>
