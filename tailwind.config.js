@@ -14,8 +14,10 @@ module.exports = {
       margin:{
         '524':"32.75rem",
         '33':"2.0625rem",
-      }
+      },
+      backgroundImage: {
     },
   },
   plugins: [],
-};
+}
+}
