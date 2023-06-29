@@ -15,7 +15,8 @@ module.exports = {
         '524':"32.75rem",
         '33':"2.0625rem",
       },
-      backgroundImage: {
+      borderRadius: {
+        '15':'0.9375rem'
     },
   },
   plugins: [],
