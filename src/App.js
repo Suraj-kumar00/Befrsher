@@ -6,11 +6,13 @@ import { Newsletter } from "./Component/Newsletter";
 import BecomeSeller from "./Component/BecomeSeller";
 import WhyOnlyWe from "./Component/WhyOnlyWe"
 import MostTrending from "./Component/MostTrending";
+import TodaysDeal from "./Component/TodaysDeal";
 
 function App() {
   return (
     <main >
      <Header/>
+     <TodaysDeal/>
      <MostTrending/>
      <WhyOnlyWe/>
      <BecomeSeller/>
