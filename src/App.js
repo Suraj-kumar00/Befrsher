@@ -5,11 +5,13 @@ import InstagramComp from "./Component/InstagramComp";
 import { Newsletter } from "./Component/Newsletter";
 import BecomeSeller from "./Component/BecomeSeller";
 import WhyOnlyWe from "./Component/WhyOnlyWe"
+import MostTrending from "./Component/MostTrending";
 
 function App() {
   return (
     <main >
      <Header/>
+     <MostTrending/>
      <WhyOnlyWe/>
      <BecomeSeller/>
      <InstagramComp/>
