@@ -9,11 +9,13 @@ import MostTrending from "./Component/MostTrending";
 import TodaysDeal from "./Component/TodaysDeal";
 import TrendNearrYou from "./Component/TrendNearrYou";
 import Categories from "./Component/Categories";
+import HeroSection from "./Component/HeroSection";
 
 function App() {
   return (
     <main >
      <Header/>
+     <HeroSection/>
      <Categories/>
      <TrendNearrYou/>
      <TodaysDeal/>
