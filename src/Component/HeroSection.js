@@ -15,7 +15,7 @@ function HeroSection() {
                 
                             <div className="flex w-[8rem] h-5 justify-center ml-[0.5rem]">
                                 <img className=" h-4 flex j" src={Locationicon} alt="locationicon"/>
-                                <div className="flex items-center  ml-1 w-[7.25rem] h-5"type="text" placeholder='Add Location'>Add Location </div>
+                                <div className="flex items-center font-normal text-[1rem]  -tracking-[0.02rem] text-[#8a8a8a] ml-1 w-[7.25rem] h-5"type="text" placeholder='Add Location'>Add Location </div>
 
                             </div>
                              <div className="w-[0.0625rem] h-10 bg-[#8a8a8a] flex ml-[5.64rem]" ></div>
@@ -23,7 +23,7 @@ function HeroSection() {
                                     <div className=" flex items-center  ml-[1.5rem]">
                                         <img src={searchicon} alt="searchicon"/>
                                             <label className=" ml-1">
-                                                    <input type="submit" className="searchbtn" placeholder='Search here' value="Search Here"></input>            
+                                                    <input type="submit" className="text-[1rem] font-normal -tracking-[0.02rem] text-[#8a8a8a]" placeholder='Search here' value="Search Here"></input>            
                                          </label> 
 
                                     </div>
