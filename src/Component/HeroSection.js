@@ -3,15 +3,19 @@ import searchicon from "../Images/searchicon.svg"
 import Locationicon from "../Images/Location icon.svg"
 import HeroSecImg from "../Images/HeroSecImg.png"
 import storeicon from "../Images/Store.png"
+import star from "../Images/star.svg"
 
 function HeroSection() {
   return (
     <section className="w-[89.5rem] h-[26.5rem] flex flex-col  items-center justify-center">
         <img  className="relative w-full h-full" src={HeroSecImg} alt="HEroSecImg"/>
         <div className='absolute flex flex-col items-center '>
-             <p className="text-[#E7e7e7]  text-[3.125rem] flex items-center justify-center font-bold -tracking-[0.3125rem] h-[12.5rem] w-[74.3125rem]  ">Keep Up with Local Fashion<br></br>
-                                    Trends. EXPL  RE</p>
-            <div className=" relative w-[44rem] h-10 rounded-[0.625rem] bg-[#e7e7e7] flex items-center ">
+             <div className="text-[#E7e7e7]  text-[3.125rem] flex flex-col items-center justify-center font-bold  h-[12.5rem] w-[74.3125rem] tracking-[0.3125rem] ">
+                      <p className=''>Keep Up with Local Fashion </p>
+                      <p className='flex items-center'>Trends. EXPL<span className="w-10 h-10 inline"><img className="w-10 h-10 "src={star} alt="star icon"/> </span>RE</p>
+              </div>
+            
+             <div className=" relative w-[44rem] h-10 rounded-[0.625rem] bg-[#e7e7e7] flex items-center ">
                 
                             <div className="flex w-[8rem] h-5 justify-center ml-[0.5rem]">
                                 <img className=" h-4 flex j" src={Locationicon} alt="locationicon"/>
