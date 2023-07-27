@@ -23,11 +23,11 @@ function App() {
      {/* <DummyHeaderForSignupForm/>
      <SignupForm/> */}
 
-     {/* <HeroSection/> */}
-     <Categories/>
-     {/* <TrendNearrYou/>
+     <HeroSection/>
+     {/* <Categories/> */}
+     {/* <TrendNearrYou/> */}
      <TodaysDeal/>
-     <MostTrending/>
+     {/* <MostTrending/>
      <WhyOnlyWe/>
      <BecomeSeller/>
      <InstagramComp/>

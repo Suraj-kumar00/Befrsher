@@ -22,7 +22,7 @@ function Categories() {
                                 // <div className="flex-grow h-[16.3245rem] gap-3 flex flex-col justify-center items-center border-2 border-red-500 4xl:flex-grow  2xl:max-w-[11.11rem] xl:max-w-[9.15rem] lg:max-w-[6.5rem] md:max-w-[5.17rem] sm:overflow-x-auto">   
                                    <div className=" max-h-[16.3245rem] gap-3 flex flex-col justify-center items-center border-2 border-red-500   ">
                                 <div classame="max-w-[13.625rem] min-h-[13.625rem] rounded-[0.625rem]"><img className="rounded-[0.625rem] max-w-full min-h-full object-fill" src={data.image} alt="categoryimg"/></div>
-                                <p className='text-[1.3125rem] font-medium -tracking-[0.02625rem] '>{data.name}</p>
+                                <p className='text-[1.3125rem] font-medium -tracking-[0.02625rem] text-center'>{data.name}</p>
                         </div>
                         )
                 }
