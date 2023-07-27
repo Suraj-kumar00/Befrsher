@@ -17,15 +17,15 @@ import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
 
 function App() {
   return (
-    <main className="container-snap border-2 border-blue-700 h-screen box-border w-full " >
+    <main className="container-snap  h-screen box-border w-screen " >
      {/* <Header/> */}
      {/* <LoginForm/> */}
      {/* <DummyHeaderForSignupForm/>
      <SignupForm/> */}
 
-     <HeroSection/>
-     {/* <Categories/>
-     <TrendNearrYou/>
+     {/* <HeroSection/> */}
+     <Categories/>
+     {/* <TrendNearrYou/>
      <TodaysDeal/>
      <MostTrending/>
      <WhyOnlyWe/>
