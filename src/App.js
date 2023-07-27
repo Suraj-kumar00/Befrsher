@@ -10,13 +10,21 @@ import TodaysDeal from "./Component/TodaysDeal";
 import TrendNearrYou from "./Component/TrendNearrYou";
 import Categories from "./Component/Categories";
 import HeroSection from "./Component/HeroSection";
+import SignupForm from "./Component/SignupForm";
+import LoginForm from "./Component/LoginForm";
+import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
+
 
 function App() {
   return (
-    <main >
-     <Header/>
+    <main className="container-snap border-2 border-blue-700 h-screen box-border w-full " >
+     {/* <Header/> */}
+     {/* <LoginForm/> */}
+     {/* <DummyHeaderForSignupForm/>
+     <SignupForm/> */}
+
      <HeroSection/>
-     <Categories/>
+     {/* <Categories/>
      <TrendNearrYou/>
      <TodaysDeal/>
      <MostTrending/>
@@ -24,7 +32,7 @@ function App() {
      <BecomeSeller/>
      <InstagramComp/>
      <Newsletter/>
-     <Footer/>
+     <Footer/> */}
      
     </main>
   );
