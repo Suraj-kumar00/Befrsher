@@ -25,8 +25,8 @@ function App() {
 
      <HeroSection/>
      {/* <Categories/> */}
-     {/* <TrendNearrYou/> */}
-     <TodaysDeal/>
+     <TrendNearrYou/>
+     {/* <TodaysDeal/> */}
      {/* <MostTrending/>
      <WhyOnlyWe/>
      <BecomeSeller/>
