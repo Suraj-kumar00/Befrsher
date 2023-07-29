@@ -23,7 +23,7 @@ function App() {
      {/* <DummyHeaderForSignupForm/>
      <SignupForm/> */}
 
-     <HeroSection/>
+     {/* <HeroSection/> */}
      {/* <Categories/> */}
      {/* <TrendNearrYou/> */}
      {/* <TodaysDeal/> */}
@@ -31,8 +31,8 @@ function App() {
      {/* {/* <WhyOnlyWe/> */}
      {/* <BecomeSeller/> */}
       <InstagramComp/>
-     {/* <Newsletter/>
-     <Footer/>   */}
+     <Newsletter/>
+     {/* <Footer/>   */}
      
     </main>
   );
