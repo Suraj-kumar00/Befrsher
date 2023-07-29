@@ -22,16 +22,19 @@ function App() {
      {/* <LoginForm/> */}
      {/* <DummyHeaderForSignupForm/>
      <SignupForm/> */}
-
-     {/* <HeroSection/> */}
+    {/* //done */}
+     {/* <HeroSection/>                */}
      {/* <Categories/> */}
-     {/* <TrendNearrYou/> */}
-     {/* <TodaysDeal/> */}
+     {/* done */}
+     <TrendNearrYou/>           
+     <TodaysDeal/>
      {/* <MostTrending/> */}
-     {/* {/* <WhyOnlyWe/> */}
+      {/* <WhyOnlyWe/>  */}
      {/* <BecomeSeller/> */}
-      <InstagramComp/>
-     <Newsletter/>
+     {/* done */}
+      {/* <InstagramComp/> */}
+      {/* done */}
+     {/* <Newsletter/> */}
      {/* <Footer/>   */}
      
     </main>
