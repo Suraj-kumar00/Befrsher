@@ -23,19 +23,24 @@ function App() {
      {/* <DummyHeaderForSignupForm/>
      <SignupForm/> */}
     {/* //done */}
-     {/* <HeroSection/>                */}
+     <HeroSection/>    
+     {/* //DDDONE            */}
      {/* <Categories/> */}
      {/* done */}
-     <TrendNearrYou/>           
-     <TodaysDeal/>
+     {/* <TrendNearrYou/>   */}
+     {/* done          */}
+     {/* <TodaysDeal/> */}
+     {/* //ddddone */}
      {/* <MostTrending/> */}
+     {/* //ddddone */}
       {/* <WhyOnlyWe/>  */}
      {/* <BecomeSeller/> */}
      {/* done */}
       {/* <InstagramComp/> */}
       {/* done */}
      {/* <Newsletter/> */}
-     {/* <Footer/>   */}
+
+     <Footer/>  
      
     </main>
   );
