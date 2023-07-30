@@ -6,7 +6,7 @@ function BecomeSeller() {
   return (
     <div className=" max-h-[35.875rem] pr-12 pb-8 ml-[0.94rem] mr-[4.06rem] mb-10 mt-2 max-w-screen w-full">
             <h1 className="text-[2.3125rem] text-[#1f1f1f] font-semibold tracking-tighter]">Become a Seller</h1>
-            <div className="max-h-[30.125rem]  flex rounded-[1.25rem] border-green-600 border-2 mt-3 p-2 flex-shrink sm:flex-col sm:w-screen sm:justify-around sm:max-h-[45rem] sm:p-0 4xl:w-screen 4xl:flex 4xl:justify-evenly" >
+            <div className="max-h-[30.125rem]  flex rounded-[1.25rem] border-green-600 border-2 mt-3 p-2 flex-shrink sm:flex-col sm:w-screen sm:justify-around sm:max-h-[45rem] sm:p-0 4xl:w-screen 4xl:flex 4xl:justify-evenly " >
                     <img className="rounded-[1.25rem] flex flex-shrink xl:w-[50%] md:w-[40%] sm:w-full  "src={BecomeSellerBanner} alt="become seller banner"/>
                     <div className="flex flex-col flex-shrink  justify-around ml-10 sm:ml-1 leading-10 tracking-tighter xl:basis-3/4 sm:w-full border-2 border-red-300]">
                         <h2 className="max-w-[21.5rem] max-h-[4.25rem] text-4xl lg:text-3xl font-semibold text-[#1f1f1f] md:text-2xl ">Take Your<br className="sm:hidden"></br> Business Online</h2>

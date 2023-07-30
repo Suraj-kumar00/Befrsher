@@ -25,7 +25,7 @@ function App() {
     {/* //done */}
      <HeroSection/>    
      {/* //DDDONE            */}
-     {/* <Categories/> */}
+     <Categories/>
      {/* done */}
      {/* <TrendNearrYou/>   */}
      {/* done          */}
@@ -33,8 +33,9 @@ function App() {
      {/* //ddddone */}
      {/* <MostTrending/> */}
      {/* //ddddone */}
-      {/* <WhyOnlyWe/>  */}
-     <BecomeSeller/>
+      <WhyOnlyWe/> 
+      {/* /done */}
+     {/* <BecomeSeller/> */}
      {/* done */}
       {/* <InstagramComp/> */}
       {/* done */}
