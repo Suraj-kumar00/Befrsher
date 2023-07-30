@@ -34,13 +34,13 @@ function App() {
      {/* <MostTrending/> */}
      {/* //ddddone */}
       {/* <WhyOnlyWe/>  */}
-     {/* <BecomeSeller/> */}
+     <BecomeSeller/>
      {/* done */}
       {/* <InstagramComp/> */}
       {/* done */}
      {/* <Newsletter/> */}
-
-     <Footer/>  
+  {/* /*   done */ }
+     {/* <Footer/>   */}
      
     </main>
   );

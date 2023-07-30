@@ -11,8 +11,8 @@ function HeroSection() {
         <img  className="relative w-full h-full" src={HeroSecImg} alt="HEroSecImg"/>
         <div className='absolute flex flex-col items-center flex-wrap'>
              <div className="text-[#E7e7e7]  text-[3.125rem] flex-wrap  xl:text-[2.5rem] md:text-[1.8rem]  sm:h-[14.5rem] sm:flex-wrap  flex flex-col items-center justify-center font-bold  h-[12.5rem]  tracking-[0.3125rem] sm:w-[18rem] sm2:text-[1.5rem] sm2:w-[15rem]">
-                      <p className='sm:flex-wrap sm:flex sm:break-all '>Keep Up with Local Fashion </p> 
-                      <p className='flex items-center  sm:w-[18rem] sm2:w-[15rem] sm:flex-wrap sm:items-end mt-6  '>Trends.EXPL<span className="w-10 h-10 inline   "><img className="w-10 h-10 "src={star} alt="star icon"/> </span>RE</p>
+                      <p className='sm:flex-wrap sm:flex sm:break-all leading-8 '>Keep Up with Local Fashion </p> 
+                      <p className='flex items-center  sm:w-[18rem] sm2:w-[15rem] sm:flex-wrap sm:items-end mt-6 leading-8 '>Trends.EXPL<span className="w-10 h-10 inline   "><img className="w-10 h-10 "src={star} alt="star icon"/> </span>RE</p>
               </div>
             
              <div className=" relative w-[44rem] h-10 rounded-[0.625rem] bg-[#e7e7e7] flex items-center xl:w-[40rem] md:w-[32rem] sm:w-[19rem] sm1:w-[19rem] sm2:w-[15rem] ">
