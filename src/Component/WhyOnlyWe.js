@@ -13,8 +13,8 @@ function WhyOnlyWe() {
         <div className='flex  flex-grow mt-6 justify-evenly gap-6 md:gap-4 sm1:gap-2 items-center flex-shrink  border-2 border-red-600 '>
           {      WhyOnlyWeData.map((data)=>
                  <div className='bg-[#f4f4f4] flex flex-col flex-grow flex-shrink items-center justify-center rounded-15 pb-[1.62rem]  max-h-[28.275rem] gap-[1.5625rem] border-2 border-yellow-500'>
-                 <div className='rounded-t-15 2xl:max-w-[22.25rem] 4xl:object-cover 4xl:max-w-full max-h-[21.56rem] flex w-full flex-grow flex-shrink'><img className='rounded-t-15 max-w-full min-h-full flex-grow 4xl:max-w-full  4xl:block ' src={data.image} alt="img1"/></div> 
-                <p className='leading-5 text-[1.3125rem] sm1:text-[1rem] sm1:max-h-[13rem] text-center font-bold text-[#1f1f1f] max-w-[12.9375rem] max-h-[2.625rem]'>{data.name}</p>
+                 <div className='rounded-t-15 2xl:max-w-[22.25rem] 4xl:object-cover 4xl:max-w-full max-h-[21.56rem] flex w-full    flex-shrink'><img className='rounded-t-15 max-w-full min-h-full flex-grow 4xl:max-w-full  ' src={data.image} alt="img1"/></div> 
+                <p className='leading-5 text-[1.3125rem] sm1:text-[1rem] sm:max-h-[13rem] text-center font-bold text-[#1f1f1f] max-w-[12.9375rem] max-h-[2.625rem]'>{data.name}</p>
             </div>
           )
               

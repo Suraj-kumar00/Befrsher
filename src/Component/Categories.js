@@ -13,15 +13,15 @@ function Categories() {
 //     <section className="w-[89.25rem] h-[19.5625rem] ml-[0.94rem] mr-[4.31rem] mb-10 gap-6 flex flex-col ">
     <section className=" max-h-[22.5625rem] ml-[0.94rem] mr-[4.31rem] mb-10 gap-6 flex flex-col w-full   ">
 
-            <h1 className= "text-[#1f1f1f] text-[2.3125rem] font-semibold tracking-tighter">Categories</h1>
+            <h1 className= "text-[#1f1f1f] text-[2.3125rem] font-semibold tracking-tighter ">Categories</h1>
 
-            <div className="gap-6 flex flex-nowrap items-center  w-full flex-shrink ">
+            <div className="flex  flex-grow mt-6 justify-evenly gap-6 md:gap-4 sm1:gap-2 items-center flex-shrink   border-2 border-red-600 ">
 
                 {
                         CategoriesData.map((data)=>
                                 // <div className="flex-grow h-[16.3245rem] gap-3 flex flex-col justify-center items-center border-2 border-red-500 4xl:flex-grow  2xl:max-w-[11.11rem] xl:max-w-[9.15rem] lg:max-w-[6.5rem] md:max-w-[5.17rem] sm:overflow-x-auto">   
-                                   <div className=" max-h-[16.3245rem] gap-3 flex flex-col justify-center items-center    ">
-                                <div classame="max-w-[13.625rem] min-h-[13.625rem] rounded-[0.625rem]"><img className="rounded-[0.625rem] max-w-full min-h-full object-fill" src={data.image} alt="categoryimg"/></div>
+                                   <div className=" max-h-[16.3245rem] gap-3 flex flex-col justify-center items-center   flex-grow border-2 border-yellow-300">
+                                <div classame="2xl:max-w-[13.625rem] max-h-[13.625rem] rounded-[0.625rem] w-full flex flex-grow  4xl:max-w-full  "><img className="rounded-[0.625rem] max-w-full min-h-full flex-grow object-fit" src={data.image} alt="categoryimg"/></div>
                                 <p className='text-[1.3125rem] font-medium -tracking-[0.02625rem] text-center'>{data.name}</p>
                         </div>
                         )
