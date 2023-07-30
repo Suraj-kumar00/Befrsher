@@ -18,7 +18,7 @@ import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
 function App() {
   return (
     <main className="container-snap  h-screen box-border w-screen text-base" >
-     {/* <Header/> */}
+     <Header/>
      {/* <LoginForm/> */}
      {/* <DummyHeaderForSignupForm/>
      <SignupForm/> */}

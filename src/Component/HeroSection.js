@@ -42,7 +42,7 @@ function HeroSection() {
              <div className=" relative w-[44rem] h-10 rounded-[0.625rem] bg-[#e7e7e7] flex items-center xl:w-[40rem] md:w-[32rem] sm:w-[19rem] sm1:w-[19rem]  sm:mt-2 sm:flex 4xl:hidden sm2:w-[15rem]">
                                 <img src={searchicon} alt="searchicon" className='sm:ml-1'/>
                                     <label className="absolute inset-0 ml-1 sm:ml-7 flex items-center ">
-                                            <input type="text" className="absolute sm:w-[14rem]  sm2:w-[10rem] left-6 md:w-[14rem] text-[1rem] font-normal -tracking-[0.02rem] text-[#8a8a8a] lg:w-[19rem] xl:w-[20rem] 4xl:w-[30rem] bg-yellow-400" placeholder='Search here' ></input>            
+                                            <input type="text" className="absolute sm:w-[14rem]  sm2:w-[10rem] left-6 md:w-[14rem] text-[1rem] font-normal -tracking-[0.02rem] text-[#8a8a8a] lg:w-[19rem] xl:w-[20rem] 4xl:w-[30rem] bg-[#e7e7e7]" placeholder='Search here' ></input>            
                                   </label> 
                                   <img src={storeicon} alt="storeicon" className="w-[1.875rem] h-[1.875rem] absolute left-[41.13rem] right-[0.31rem]  xl:left-[38rem] md:left-[29.5rem] sm:left-[16.5rem] sm2:left-[12.5rem] "/>
 
