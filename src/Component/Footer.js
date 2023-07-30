@@ -8,21 +8,21 @@ import Youtube from '../Images/youtube.svg'
 function Footer() {
   return (
     <footer className="max-w-screen max-h-screen bg-[#F4F4F4]  flex  justify-between  flex-col flex-shrink items-center text-[#1F1F1F] ">
-            <div className=' max-h-[11.5rem] sm1:max-h-full flex  sm1:flex-col sm:flex-col sm:max-h-full  items-center border-2 border-red-700 w-full   justify-around flex-shrink mx-[2.5rem] mb-[1.6875rem] mt-6 sm2:m-0  '>
-                <div className=" sm1:pl-[0rem] md:pl-1 flex flex-col flex-shrink items-center max-h-[11.6231rem] sm:max-h-60  border-2 border-yellow-400 ">   
+            <div className=' max-h-[11.5rem] sm1:max-h-full flex  sm1:flex-col sm:flex-col sm:max-h-full  items-center  w-full   justify-around flex-shrink mx-[2.5rem] mb-[1.6875rem] mt-6 sm2:m-0  '>
+                <div className=" sm1:pl-[0rem] md:pl-1 flex flex-col flex-shrink items-center max-h-[11.6231rem] sm:max-h-60  ">   
                         <h1 className="max-w-[21.5316rem]   h-[4.3826rem] flex items-center font-medium text-[2.3125rem] sm2:text-[1.2rem] md:text-[1.5rem] lg:text-[1.4rem]">Privacy Policy</h1>
                         <div className="max-w-[16.7679rem]  h-[2.4771rem] flex items-center text-[1.3125rem] sm2:text-[0.9rem] lg:text-[1.2rem] ">Shipping & Delivery</div>
                         <div className="max-w-[16.7679rem] h-[2.4771rem] flex items-center text-[1.3125rem] sm2:text-[0.9rem]  lg:text-[1.2rem] lg:tex">About us</div>
                         <div className="max-w-[16.7679rem] h-[2.4771rem] flex items-center text-[1.3125rem] sm2:text-[0.9rem] lg:text-[1.2rem] ">Returns</div>
 
                 </div>
-                <div className="flex flex-col  items-center max-h-[11.6231rem] flex-shrink border-2 border-yellow-400"  >
+                <div className="flex flex-col  items-center max-h-[11.6231rem] flex-shrink "  >
                         <h1 className="max-w-[21.5316rem] h-[4.3826rem]  flex items-center font-medium text-[2.3125rem] sm2:text-[1.2rem] md:text-[1.5rem] flex-shrink lg:text-[1.4rem]">Terms & Conditions</h1>
                         <div className="max-w-[16.7679rem] h-[2.4771rem] flex items-center text-[1.3125rem] sm2:text-[0.9rem]  lg:text-[1.2rem] flex-shrink ">Shipping & Delivery</div>
                         <div className="max-w-[16.7679rem] h-[2.4771rem] flex items-center text-[1.3125rem] sm2:text-[0.9rem]  lg:text-[1.2rem] flex-shrink ">About us </div>
                         <div className="max-w-[16.7679rem] h-[2.4771rem] flex items-center text-[1.3125rem] sm2:text-[0.9rem] lg:text-[1.2rem] flex-shrink ">Returns</div>
                 </div>
-                <div className="flex flex-col  items-center  max-h-[11.6231rem] flex-shrink border-2 border-yellow-400">
+                <div className="flex flex-col  items-center  max-h-[11.6231rem] flex-shrink ">
                         <h1 className="max-w-[21.5316rem] h-[4.3826rem]   flex items-center  font-medium text-[2.3125rem] sm2:text-[1.2rem]  md:text-[1.5rem] lg:text-[1.4rem]">Contact us</h1>
                         <div className="max-w-[16.7679rem] h-[2.4771rem] flex items-center text-[1.3125rem] sm2:text-[0.9rem]  lg:text-[1.2rem] ">befrsher@gmail.com</div>
                         <div className="max-w-[16.7679rem] h-[2.4771rem] flex items-center text-[1.3125rem] sm2:text-[0.9rem]  lg:text-[1.2rem] ">+91 9898989898</div>

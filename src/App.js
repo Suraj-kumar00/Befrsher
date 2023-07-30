@@ -24,24 +24,24 @@ function App() {
      <SignupForm/> */}
     {/* //done */}
      <HeroSection/>    
-     {/* //DDDONE            */}
+     {/* //dDONE            */}
      <Categories/>
      {/* done */}
-     {/* <TrendNearrYou/>   */}
+     <TrendNearrYou/>  
      {/* done          */}
-     {/* <TodaysDeal/> */}
+     <TodaysDeal/>
      {/* //ddddone */}
-     {/* <MostTrending/> */}
-     {/* //ddddone */}
+     <MostTrending/>
+     {/* //done */}
       <WhyOnlyWe/> 
       {/* /done */}
-     {/* <BecomeSeller/> */}
+     <BecomeSeller/>
      {/* done */}
-      {/* <InstagramComp/> */}
+      <InstagramComp/>
       {/* done */}
-     {/* <Newsletter/> */}
+     <Newsletter/>
   {/* /*   done */ }
-     {/* <Footer/>   */}
+     <Footer/>  
      
     </main>
   );

@@ -10,18 +10,18 @@ import { MostTrendingData } from '../utils/MostTrendingData'
 
 function MostTrending() {
   return (
-    <section className="max-w-[95.375rem] w-full max-h-[30.25rem]  flex flex-col gap-6 ml-[0.94rem] mr-[4.19rem] mb-10 lg:gap-4 md:gap-2  sm:gap-1">
-        <h1 className='max-w-[17.875rem] max-h-[1.9375rem] text-[#1f1f1f] font-semibold tracking-tighter text-[2.3125rem] lg:text-[1.8rem] md:text-[1.5rem] sm:text-[1.3rem] '>Most Trending
+    <section className="max-w-[screen] 4xl:max-h-[100rem]  sm:mb-3 w-full max-h-[30.25rem]  flex flex-col gap-6 ml-[0.94rem] mr-[4.19rem] mb-10   2xl:gap-1  sm:gap-1 sm:ml-1 border-2 border-green-500">
+        <h1 className='max-w-[17.875rem] max-h-[1.9375rem] text-[#1f1f1f] font-semibold tracking-tighter text-[2.3125rem] md:text-[1.5rem] sm:text-[1.3rem] lg:text-[2rem]'>Most Trending
 
         </h1>
 
- <div className="gap-10 flex items-center max-h-[38.375rem] min-w-[38.5rem]  flex-nowrap  flex-shrink xl:gap-8 lg:gap-6 md:gap-4 sm:gap-2">
+ <div className="gap-10 flex flex-grow items-center max-h-[38.375rem] 4xl:max-h-[48rem]  flex-nowrap  flex-shrink xl:gap-8 lg:gap-6 md:gap-4 sm:gap-2  w-screen 4xl:mt-4 sm:mt-1 ">
  {                       
  MostTrendingData.map((data)=>
 
-     <div className="flex flex-col bg-[#e7e7e7] rounded-15   justify-center items-center max-h-[26.375rem]   flex-nowrap ">
-             <div className='max-w-[20.25rem] min-h-80  relative '>
-                 <img  src={data.image} className=' max-w-full max-h-full w-full h-full ' alt="Trendingimg" />
+     <div className="flex flex-col bg-[#e7e7e7] rounded-15   justify-center items-center 2xl:max-h-[26.375rem]  w-full  flex-shrink flex-grow ">
+             <div className='2xl:max-w-[20.25rem] min-h-80  relative flex flex-shrink flex-grow w-full'>
+                 <img  src={data.image} className=' max-w-full max-h-full w-full h-full flex-grow 4xl:w-full ' alt="Trendingimg" />
                  <img src={data.Wishlist} className=' text-[#FFFF]  absolute max-w-[3.125rem] max-h-[2.625rem] left-[17.3125rem] top-[0.81rem] right-[0.81rem] bottom-[16.56rem]' alt="wishlisticon"/>
              </div>
              <p className=" flex flex-col">
