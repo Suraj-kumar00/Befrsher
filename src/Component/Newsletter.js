@@ -3,8 +3,9 @@ import React from 'react'
 export const Newsletter = () => {
   return (
     <section className="max-h-[29.8125rem] max-w-full  flex flex-col justify-center items-center ml-10 2xl:ml-[0.94rem] md:ml-[0.5rem] mr-[2.5625rem]  w-screen mt-1 4xl:m-2 sm:mb-3 "> 
-            <h1 className=' font-medium -tracking-[0.0625rem] text-[#1f1f1f] border-2 mt-1 p-2 flex items-center k h-[6.25rem] text-[3.125rem] md:text-[2.5rem] lg:text-[3rem] sm:text-[1.8rem] text-center leading-7  mb-[1.5rem] '>Get 25% off on your first order</h1>
-            <p className="w-[48.1875rem] md:max-w-[40rem] sm:max-w-[25rem] sm2:max-w-[18rem] max-h-20 flex justify-center text-[#8a8a8a] text-[1.75rem] md:text-[1.5rem] sm:text-[1.3rem] text-center -tracking-[0.035rem] mb-6 mx-[20.625rem]">Want exclusive offers and first access to Produt? Sign up for Newsletter</p>
+            <h1 className=' font-medium -tracking-[0.0625rem] text-[#1f1f1f]  mt-1 p-2 flex items-center  h-[6.25rem] text-[3.125rem] md:text-[2.5rem] lg:text-[3rem] sm:text-[1.8rem] text-center leading-7  mb-[1.5rem] '> INSPIRATION IN YOUR INBOX
+</h1>
+            <p className="w-[48.1875rem] md:max-w-[40rem] sm:max-w-[25rem] sm2:max-w-[18rem] max-h-20 flex justify-center text-[#8a8a8a] text-[1.75rem] md:text-[1.5rem] sm:text-[1.3rem] text-center -tracking-[0.035rem] mb-6 mx-[20.625rem]">Sign up to be the first to hear About sales & new product releases!. </p>
             <form className="flex justify-center items-center max-w-[64.9375rem] max-h-20 rounded-[1.0625rem] mx-[12.25rem] mb-[3.125rem] text-[#8a8a8a] xl:max-w-3xl lg:max-w-2xl md:max-w-lg  sm:flex-col ">
                 <label for ="email"></label>
                 {/* <img className="border-2 border-yellow-400" src={emaillogo} alt="emaillogo"/> */}
