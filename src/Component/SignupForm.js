@@ -4,7 +4,7 @@ import formgirlimage from "../Images/formgirlimage.jpg"
 
 // import { GoogleLogin } from '@react-oauth/google';
 // import GoogleButton from 'react-google-button'
-import FacebookLogin from 'react-facebook-login';
+// import FacebookLogin from 'react-facebook-login';
 // import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import facebooklogo from '../Images/facebooklogo.svg'
 
