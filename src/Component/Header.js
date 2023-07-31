@@ -7,7 +7,7 @@ import Cartlogo from "../Images/Cart.svg"
 
 function Header() {
   return (
-    <main className='flex max-w-screen flex-grow flex-shrink w-full border-black border-2 h-60 pt-3 pb-2 pr-[2.5625rem] pl-10 lg:p-1'>
+    <main className='flex max-w-screen flex-grow flex-shrink w-full h-60 pt-3 pb-2 pr-[2.5625rem] pl-10 lg:p-1'>
    
             <img className="h-full flex flex-shrink" src={Companylogo} alt="companylogo"/>
         

@@ -10,7 +10,7 @@ import { MostTrendingData } from '../utils/MostTrendingData'
 
 function MostTrending() {
   return (
-    <section className="max-w-[screen] 4xl:max-h-[100rem]  sm:mb-3 w-full max-h-[30.25rem]  flex flex-col gap-6 ml-[0.94rem] mr-[4.19rem] mb-10   2xl:gap-1  sm:gap-1 sm:ml-1 border-2 border-green-500">
+    <section className="max-w-[screen] 4xl:max-h-[100rem]  sm:mb-3 w-full max-h-[30.25rem]  flex flex-col gap-6 ml-[0.94rem] mr-[4.19rem] mb-10   2xl:gap-1  sm:gap-1 sm:ml-1 border-2">
         <h1 className='max-w-[17.875rem] max-h-[1.9375rem] text-[#1f1f1f] font-semibold tracking-tighter text-[2.3125rem] md:text-[1.5rem] sm:text-[1.3rem] lg:text-[2rem]'>Most Trending
 
         </h1>
