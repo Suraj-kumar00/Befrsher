@@ -7,8 +7,8 @@ import star from "../Images/star.svg"
 
 function HeroSection() {
   return (
-    <section className="h-[26.5rem] flex flex-col flex-grow flex-shrink items-center justify-center max-w-screen w-full border-2 border-red-600 sm:mb-3">
-        <img  className="relative w-full h-full flex-grow flex-shrink flex max-w-screen object-cover border-2 border-blue-500" src={HeroSecImg} alt="HEroSecImg"/>
+    <section className="h-[26.5rem] flex flex-col flex-grow flex-shrink items-center justify-center max-w-screen w-full  sm:mb-3">
+        <img  className="relative w-full h-full flex-grow flex-shrink flex max-w-screen object-cover " src={HeroSecImg} alt="HEroSecImg"/>
         <div className='absolute flex flex-col items-center flex-wrap'>
              <div className="text-[#E7e7e7]  text-[3.125rem] flex-wrap  xl:text-[2.5rem] md:text-[1.8rem]  sm:h-[14.5rem] sm:flex-wrap  flex flex-col items-center justify-center font-bold  h-[12.5rem]  tracking-[0.3125rem] sm:w-[18rem] sm2:text-[1.5rem] sm2:w-[15rem]">
                       <p className='sm:flex-wrap sm:flex sm:break-all leading-8 '>Keep Up with Local Fashion </p> 
