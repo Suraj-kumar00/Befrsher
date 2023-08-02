@@ -23,7 +23,7 @@ function Header() {
                     </div>
                     <div className="flex items-center justify-between  max-w-[3.5625rem]">
                         <div className="max-w-[2.5625rem] ">More</div>
-                        <img className="h-3.5 max-w-[0.5625rem] "src={Arrowdown} alt="arrowdownlogo"/>
+                        <img className="h-3.5 ml-1 flex justify-center items-center max-w-[0.5625rem] "src={Arrowdown} alt="arrowdownlogo"/>
                     </div>
 
             </div>

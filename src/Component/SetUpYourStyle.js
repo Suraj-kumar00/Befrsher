@@ -180,10 +180,6 @@ window.google.accounts.id.prompt();
             type="text"
             placeholder="Phone*"
           />
-           {/* <Field  component={CustomInputComponent} className="border-[1px] border-[#8a8a8a] w-[28.125rem]  h-[3.125rem]   rounded-[0.3125rem] mt-[0.75rem]" type="number" id="phone" name="phone" >
-                         
-          </Field> 
-          <ErrorMessage name='phone'/> */}
             </div>
             <div className='flex flex-col mt-[3.62rem]'>
             
@@ -193,62 +189,17 @@ window.google.accounts.id.prompt();
             
             <div className='flex flex-col mt-[3.62rem]'>
 
-                        <Field className="border-[1px] py-[1.06rem] pl-[1.56rem] max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] " type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password *"></Field>
-                        <ErrorMessage name='confirmpassword'/>
+                      
             </div>
 
             <div className='mt-[0.75rem] text-base font-normal tracking-tight leading-4'>
             Already have an account? <span className='text-[#484FA2] text-base font-normal tracking-tight'>Login</span> 
             </div>
 
-            <button type='submit' className='p-4 mt-[3.75rem] max-w-[28.125rem] w-full h-[3.13rem] rounded-[2.5rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight' >Sign Up</button>
-
-
-            <div className=' mt-[1.88rem]'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="2" viewBox="0 0 500 2" fill="none">
-            <path d="M0 1H500" stroke="#8A8A8A"/>
-            </svg>
-            </div>
-
-            <div   className=' mt-[1.88rem]  w-[28.125rem] h-[3.13rem] flex items-center justify-center'>        
-            <div id="signInDiv"  className=' '></div>
-            { Object.keys(user).length !== 
-          <button onClick={(e) => handleSignOut(e)}>SignOut</button>
- 
-            }
-        
-         {user && 
-                    <div>
-                      { user.picture &&
-                      <img src={user.picture} alt="userpic"/>
-
-                      }
-                      <h3>{user.name}</h3>
-                    </div>
-
-            } 
-            </div>            
-           
-           
-<div className=' flex justify-center max-w-[28.125rem] h-[3.13rem] mt-[1.88rem]'>
-<FacebookLogin
-         appId="" //APP ID NOT CREATED YET         fields="name,email,picture"   
-                    autoLoad     
-                   callback={responseFacebook}       
-                     className="w-[28.125rem]   h-[3.13rem]"     
-                    render={renderProps => (
-            <button className="flex justify-center items-center gap-[0.75rem] max-w-[25.125rem] w-full max-h-[2.5rem] rounded-full border-[1px] border-[#dad9d9]" onClick={renderProps.onClick}><span className='inline-block w-[25px] h-[25px] text-base font-medium leading-4 tracking-tight'> <img src={facebooklogo } alt="facebooklogin"  /></span>Sign up with Facebook</button>
-          )}
-      />
-</div>
-        
-
-
+            <button type='submit' className='p-4 mt-[3.75rem] max-w-[28.125rem] w-full h-[3.13rem] rounded-[2.5rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight' >Continue</button>
+            <button type='submit' className='p-4 mt-[3.75rem] max-w-[28.125rem] w-full h-[3.13rem] rounded-[2.5rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
 
         </Form>
-
-       
-
 
     </Formik>
 

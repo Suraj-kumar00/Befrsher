@@ -20,12 +20,13 @@ function App() {
   return (
     <main className="container-snap  h-screen box-border w-screen text-base" >
      {/* <Header/> */}
-     <LoginForm/>
     
      {/* <DummyHeaderForSignupForm/> */}
      {/* <SignupForm1/> */}
      <HeaderForSignUpPage/>
-     {/* <SignupForm/> */}
+     {/* <LoginForm/> */}
+
+     <SignupForm/>
      {/* <HeroSection/>     */}
      {/* <Categories/> */}
      {/* <TrendNearrYou/>   */}
