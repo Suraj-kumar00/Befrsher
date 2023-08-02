@@ -28,6 +28,9 @@ module.exports = {
       'sm3': {'max': '320px'},  
     },
     extend: {
+      boxShadow: {
+        'my_shadow': '25px 23px 20px 0px rgba(0, 0, 0, 0.30)',
+      },
       lineHeight:{
         'leading-1.31':'1.3125rem'
       },

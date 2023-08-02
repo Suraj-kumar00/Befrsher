@@ -57,7 +57,7 @@ const validationSchema = Yup.object({
 function SignupForm() {
     const [activeButtonIndex, setActiveButtonIndex] = useState(0);
     const [activeButtonLogin, setActiveButtonLogin] = useState(0);
-    // const [user,setUser] = useState({ })
+    const [user,setUser] = useState({ })
 
 
 
@@ -70,49 +70,57 @@ function SignupForm() {
         setActiveButtonLogin(1) ;
         setActiveButtonIndex(0);
     }
-        // const responseGoogle = (response) =>{
+        const responseGoogle = (response) =>{
 
-        //     console.log(response.credential)
-        //     var userObject =jwt_decode(response.credential)
-        //     console.log(userObject)
-        //     setUser(userObject)
-        //     document.getElementById("signInDiv").hidden = true;
-        // }
+            console.log(response.credential)
+            var userObject =jwt_decode(response.credential)
+            console.log(userObject)
+            setUser(userObject)
+            document.getElementById("signInDiv").hidden = true;
+        }
       const responseFacebook = (response) => {
         console.log(response);
       }
-      // function handleSignOut(event){
+      function handleSignOut(event){
 
-      //   setUser({});
-      //   document.getElementById("signInDiv").hidden = false;
+        setUser({});
+        document.getElementById("signInDiv").hidden = false;
   
-      // }
+      }
 
-//       useEffect(()=>{
-//            // eslint-disable-next-line no-undef
-//      window.google.accounts.id.initialize({
-//         client_id:"",
-//         callback:responseGoogle
-// })
+      function onClickHandler(){
+        console.log("Sign in with Google button clicked...")
+      }
 
-// const signInDiv =      document.getElementById("signInDiv")
-// // eslint-disable-next-line no-undef
-// window.google.accounts.id.renderButton(
+      useEffect(()=>{
+           // eslint-disable-next-line no-undef
+     window.google.accounts.id.initialize({
+        client_id:"",
+        callback:responseGoogle,
+        // ux_mode: "redirect"
+})
 
-// signInDiv,{
+const signInDiv =      document.getElementById("signInDiv")
+// eslint-disable-next-line no-undef
+window.google.accounts.id.renderButton(
 
-//     theme:'outline',
-//     size:"large",
-//     width:400,
-    
-// }
-// )
+signInDiv,{
 
-// window.google.accounts.id.prompt();
+    theme:'outline',
+    size:"large",
+    width:400,
+    text: "signup_with",
+    shape:'pill',
+    logo_alignment: "center",
+    click_listener: onClickHandler
+}
+)
+
+window.google.accounts.id.prompt();
 
 
 
-//       },[])
+      },[])
 
 
  
@@ -130,10 +138,10 @@ function SignupForm() {
 
    
   return (
-    <div className="grid grid-cols-2 gap-[6.56rem] ">
+    <div className="grid grid-cols-2 gap-[5.62rem] justify-items-center">
 
 
-      <div  className="formikdiv ml-[6.56rem] mt-[2.19rem] mb-[3.75rem]">
+      <div  className="formikdiv  max-w-[31.25rem] max-h-[50.625rem] ">
       <Formik
     initialValues={initialValues}
     validationSchema = {validationSchema}
@@ -159,13 +167,13 @@ function SignupForm() {
             
           
 
-            <div className='flex flex-col mt-[1.88rem]'>
+            <div className='flex flex-col mt-[3.62rem]'>
                     {/* <label className="text-black font-medium leading-4" htmlFor='name'>Name</label> */}
-                        <Field className="border-[1px] border-[#8a8a8a] w-[28.125rem]  h-[3.125rem]   rounded-[0.3125rem] mt-[0.75rem]" type="text" id="name" name="name" placeholder="Full Name *" />
+                        <Field className="border-[1px] border-[#8a8a8a] max-w-[28.125rem]  h-[3.125rem]  py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem]" type="text" id="name" name="name" placeholder="Full Name *" />
                         <ErrorMessage name='name'/>
             </div>
             
-            <div className='flex flex-col mt-[1.88rem]'>
+            <div className='flex flex-col mt-[3.62rem]'>
             {/* <label className="text-black font-medium leading-4" htmlFor='phone' >Phone Number JI</label> */}
             <CustomInput
             label=""
@@ -178,15 +186,15 @@ function SignupForm() {
           </Field> 
           <ErrorMessage name='phone'/> */}
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col mt-[3.62rem]'>
             
-                        <Field className="border-[1px]        max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] mt-[0.75rem] " type="password" name="password" id="password" placeholder="Password*"></Field>
+                        <Field className="border-[1px]    py-[1.06rem] pl-[1.56rem]    max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] " type="password" name="password" id="password" placeholder="Password*"></Field>
                         <ErrorMessage name='password'/>
             </div>
             
-            <div className='flex flex-col'>
+            <div className='flex flex-col mt-[3.62rem]'>
 
-                        <Field className="border-[1px]  max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] mt-[0.75rem] " type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password *"></Field>
+                        <Field className="border-[1px] py-[1.06rem] pl-[1.56rem] max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] " type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password *"></Field>
                         <ErrorMessage name='confirmpassword'/>
             </div>
 
@@ -194,23 +202,23 @@ function SignupForm() {
             Already have an account? <span className='text-[#484FA2] text-base font-normal tracking-tight'>Login</span> 
             </div>
 
-            <button type='submit' className=' mt-[3.75rem] w-[28.125rem] h-[3.13rem] rounded-[2.5rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight' >Sign Up</button>
+            <button type='submit' className='p-4 mt-[3.75rem] max-w-[28.125rem] w-full h-[3.13rem] rounded-[2.5rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight' >Sign Up</button>
 
 
-            {/* <div className=' mt-[1.88rem]'>
+            <div className=' mt-[1.88rem]'>
             <svg xmlns="http://www.w3.org/2000/svg" width="500" height="2" viewBox="0 0 500 2" fill="none">
             <path d="M0 1H500" stroke="#8A8A8A"/>
             </svg>
             </div>
 
-            <div   className='mt-[1.88rem]  w-[28.125rem] h-[3.13rem] flex items-center justify-center'>        
+            <div   className=' mt-[1.88rem]  w-[28.125rem] h-[3.13rem] flex items-center justify-center'>        
             <div id="signInDiv"  className=' '></div>
-            { Object.keys(user).length !== 0 &&
+            { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
- */}
-
+ 
+            }
         
-          {/* {user && 
+         {user && 
                     <div>
                       { user.picture &&
                       <img src={user.picture} alt="userpic"/>
@@ -219,45 +227,19 @@ function SignupForm() {
                       <h3>{user.name}</h3>
                     </div>
 
-              } */}
-            {/* </div>             */}
+            } 
+            </div>            
            
 {/* <div className='border-2 border-gray-500 w-[28.125rem] h-[3.13rem]'>
 <FacebookLogin
-        appId="" //APP ID NOT CREATED YET
-        fields="name,email,picture"
-        autoLoad
-        callback={responseFacebook}
-        className="w-[28.125rem] h-[3.13rem]"
-        render={renderProps => (
+         appId="" //APP ID NOT CREATED YET         fields="name,email,picture"         autoLoad         callback={responseFacebook}         className="w-[28.125rem] h-[3.13rem]"         render={renderProps => (
             <button className="flex justify-center items-center gap-[0.75rem] w-[28.125rem] h-[3.13rem] rounded-[0.3125rem] border-[1px] border-[#1f1f1f]" 
             onClick={renderProps.onClick}><span className='inline-block w-[30px] h-[30px] text-base font-medium leading-4 tracking-tight'> <img src={facebooklogo } alt="facebooklogin"  /></span>Sign up with Facebook</button>
           )}
       />
 </div>
-        */}
+         */}
 
-{/* <div>
-<div id="g_id_onload"
-     data-client_id=""
-     data-context="signup"
-     data-ux_mode="popup"
-     data-login_uri="http://localhost:3000/"
-     data-itp_support="true">
-</div>
-
-<div className="g_id_signin w-[660px]"
-     data-type="standard"
-     data-shape="rectangular"
-     data-theme="outline"
-     data-text="signup_with"
-     data-size="large"
-     data-width="450"
-     data-logo_alignment="center"
-     data-padding="20">
-</div>
-
-</div> */}
 
         </Form>
 
@@ -268,8 +250,8 @@ function SignupForm() {
 
       </div>  
 
-        <div className="shadow-[25px_23px_20px_0px_rgba(0, 0, 0, 0.30)] rounded-[2rem]" >
-          <img className="h-[100%]"src={formgirlimage} alt="girlimg"/>
+        <div className="shadow-my_shadow rounded-[2rem] " >
+          <img className="h-[100%] rounded-[2rem]"src={formgirlimage} alt="girlimg"/>
         </div>
         
     </div>

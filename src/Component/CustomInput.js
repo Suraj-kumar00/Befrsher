@@ -7,7 +7,7 @@ const CustomInput = ({ label, ...props }) => {
     <>
       <label className="text-black font-medium leading-4">{label}</label>
       <input
-      className="border-[1px] border-[#8a8a8a] w-[28.125rem]  h-[3.125rem]   rounded-[0.3125rem] mt-[0.75rem]"
+      className="border-[1px] border-[#8a8a8a] max-w-[28.125rem]  h-[3.125rem]   rounded-[0.3125rem] py-[1.06rem] pl-[1.56rem]"
 
         {...field}
         {...props}
