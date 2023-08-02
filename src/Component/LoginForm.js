@@ -4,11 +4,39 @@ import {Formik,Form,Field,ErrorMessage} from 'formik'
 import clsx from 'clsx';
 import CustomInput from './CustomInput';
 import LoginFormGirlImg from '../Images/LoginFormGirlImg.svg'
+import * as Yup from 'yup'
+
+const initialValues={
+    phone:'',
+    otp:'',
+    password:'',
+}
+
+const onSubmit= values=>{
+    console.log("Form Values",values)
+}
+
+const validationSchema = Yup.object({
+    phone:Yup.string()
+    .matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+    ,  'Phone number is not valid').min(10,'number must be atleast 10 digit'),
+
+    otp:Yup.number().typeError("Must be a number")
+    .required("Required"),
+    password:Yup.string().required('PasswordRequired').min(8,
+        'password must contain 8 or more characters with at least one of each: uppercase, lowercase, number and special'
+          )
+          .minLowercase(1, 'password must contain at least 1 lower case letter')
+          .minUppercase(1, 'password must contain at least 1 upper case letter')
+          .minNumbers(1, 'password must contain at least 1 number')
+          .minSymbols(1, 'password must contain at least 1 special character')
+})
 
 
 const LoginForm = () => {
     const [activeButtonIndex, setActiveButtonIndex] = useState(0);
     const [activeButtonLogin, setActiveButtonLogin] = useState(0);
+
     const SignupHandler = () =>{
         setActiveButtonIndex(1) ;
          setActiveButtonLogin(0);
@@ -18,31 +46,35 @@ const LoginForm = () => {
         setActiveButtonLogin(1) ;
         setActiveButtonIndex(0);
     }
+
   return (
     <div className="grid grid-cols-2 gap-[5.63rem] justify-items-center border-2 border-red-500 mt-[2.19rem]">
 
       <div  className=" max-w-[31.25rem] max-h-[50.625rem] ">
 
-            <Formik>
+            <Formik
+            initialValues={initialValues}
+            validationSchema = {validationSchema}
+            onSubmit = {onSubmit}>
             <Form  className="max-w-[31.25rem] max-h-[50.625rem]">
         <div className='flex gap-x-[1.88rem]'>       
 
         <div onClick={SignupHandler}
-        className={clsx(
+            className={clsx(
             {  "text-white bg-[#484FA2]" : activeButtonIndex===1,
              "text-black" : activeButtonIndex===0
             } ,
             ' flex justify-center items-center w-[12.5rem] h-[3.125rem] rounded-[0.3125rem]  text-[#fff] text-[1.3125rem] border-[#484FA2] border-[1px] font-semibold leading-1.31 tracking-light ]'
             )}>Sign Up</div>
         <div onClick={LoginHandler}
-        className={clsx(
+             className={clsx(
             {  "text-white bg-[#484FA2]" : activeButtonLogin===1,
              "text-black" : activeButtonLogin===0
             } ,
             'flex justify-center items-center w-[12.5rem] h-[3.125rem] rounded-[0.3125rem] border-[1px] border-[#484FA2]  text-[1.3125rem] font-semibold leading-1.31 tracking-lighttext-black')}>Login</div>
 
         </div>
-       
+        
         <div className='flex flex-col mt-[3.62rem]'>
             <CustomInput
             label=""
@@ -51,7 +83,7 @@ const LoginForm = () => {
             placeholder="Phone*"
           />
          
-            </div>
+        </div>
 
             <div className='flex flex-col mt-[3.62rem] '>
                     <Field className="border-[1px]    py-[1.06rem] pl-[1.56rem]    max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] " type="number" name="otp" id="otp" placeholder="One Time Password (OTP) *"></Field>

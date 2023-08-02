@@ -15,6 +15,7 @@ import LoginForm from "./Component/LoginForm";
 import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
 import SignupForm1 from "./Component/SignupForm1";
 import HeaderForSignUpPage from "./Component/HeaderForSignUpPage"
+import SetUpYourStyle from "./Component/SetUpYourStyle"
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
      <HeaderForSignUpPage/>
      {/* <LoginForm/> */}
 
-     <SignupForm/>
+     {/* <SignupForm/> */}
+     <SetUpYourStyle/>
      {/* <HeroSection/>     */}
      {/* <Categories/> */}
      {/* <TrendNearrYou/>   */}
