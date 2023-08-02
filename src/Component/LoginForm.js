@@ -50,6 +50,9 @@ const LoginForm = () => {
                 <Field className="border-[1px]  w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] mt-[0.75rem] " type="password" name="password" id="password"></Field>
                 <ErrorMessage name='password'/>
             </div>
+
+            <button type='submit' className=' mt-[3.75rem] w-[28.125rem] h-[3.13rem] rounded-[0.3125rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight' >Login</button>
+
                     </Form>
 
 

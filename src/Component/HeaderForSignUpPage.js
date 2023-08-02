@@ -11,7 +11,7 @@ function Header() {
    
             <img className="h-full flex flex-shrink" src={Companylogo} alt="companylogo"/>
         
-        <div className="flex flex-shrink justify-evenly items-center max-w-screen w-full  ">
+        <div className="flex flex-shrink justify-end items-center max-w-screen w-full  ">
             <div className='flex flex-shrink items-center justify-around lg:max-w-[15rem] h-[1.6875rem] 2xl:max-w-[21.3125rem] w-full '>
                     <div className='flex items-center  flex-shrink max-w-[4.875rem]'>
                         <img className='max-w-[1.125rem]' src={Home} alt="Home"/>

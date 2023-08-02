@@ -7,7 +7,7 @@ import CustomInput from './CustomInput'
 // import { GoogleLogin } from '@react-oauth/google';
 // import GoogleButton from 'react-google-button'
 // import FacebookLogin from 'react-facebook-login';
-// import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import facebooklogo from '../Images/facebooklogo.svg'
 
 import clsx from 'clsx';
@@ -85,6 +85,7 @@ function SignupForm() {
 
         setUser({});
         document.getElementById("signInDiv").hidden = false;
+       window.google.accounts.id.disableAutoSelect();
   
       }
 
@@ -230,15 +231,20 @@ window.google.accounts.id.prompt();
             } 
             </div>            
            
-{/* <div className='border-2 border-gray-500 w-[28.125rem] h-[3.13rem]'>
+           
+<div className=' flex justify-center max-w-[28.125rem] h-[3.13rem] mt-[1.88rem]'>
 <FacebookLogin
-         appId="" //APP ID NOT CREATED YET         fields="name,email,picture"         autoLoad         callback={responseFacebook}         className="w-[28.125rem] h-[3.13rem]"         render={renderProps => (
-            <button className="flex justify-center items-center gap-[0.75rem] w-[28.125rem] h-[3.13rem] rounded-[0.3125rem] border-[1px] border-[#1f1f1f]" 
-            onClick={renderProps.onClick}><span className='inline-block w-[30px] h-[30px] text-base font-medium leading-4 tracking-tight'> <img src={facebooklogo } alt="facebooklogin"  /></span>Sign up with Facebook</button>
+         appId="" //APP ID NOT CREATED YET         fields="name,email,picture"   
+                    autoLoad     
+                   callback={responseFacebook}       
+                     className="w-[28.125rem]   h-[3.13rem]"     
+                    render={renderProps => (
+            <button className="flex justify-center items-center gap-[0.75rem] max-w-[25.125rem] w-full max-h-[2.5rem] rounded-full border-[1px] border-[#dad9d9]" onClick={renderProps.onClick}><span className='inline-block w-[25px] h-[25px] text-base font-medium leading-4 tracking-tight'> <img src={facebooklogo } alt="facebooklogin"  /></span>Sign up with Facebook</button>
           )}
       />
 </div>
-         */}
+        
+
 
 
         </Form>
@@ -250,7 +256,7 @@ window.google.accounts.id.prompt();
 
       </div>  
 
-        <div className="shadow-my_shadow rounded-[2rem] " >
+        <div className="shadow-my_shadow rounded-[2rem] border-2 border-orange-400 max-w-[39.75rem max-h[50.2075]]" >
           <img className="h-[100%] rounded-[2rem]"src={formgirlimage} alt="girlimg"/>
         </div>
         
