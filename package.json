@@ -16,6 +16,7 @@
     "react-facebook-login": "^4.1.1",
     "react-google-button": "^0.7.2",
     "react-google-login": "^5.2.2",
+    "react-phone-input-2": "^2.15.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "yup": "^1.2.0",
