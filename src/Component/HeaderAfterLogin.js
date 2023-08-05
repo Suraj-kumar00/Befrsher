@@ -1,9 +1,9 @@
 import React from "react";
 import Companylogo from "../Images/Companylogo.jpg";
-import Cartlogo from "../Images/Cart.svg";
+import Cart from "../Images/Cart.svg";
 import searchicon from "../Images/searchicon.svg";
 import LocationIcon from "../Images/LocationIcon.svg";
-import store from "../Images/Store.svg";
+import store from "../Images/Store.png";
 import Arrowdown from "../Images/Arrowdown.svg";
 import profilePhoto from "../Images/profilePhoto.svg";
 import Wishlist from "../Images/Wishlist.svg";
@@ -61,7 +61,7 @@ function HeaderAfterLogin() {
             </a>
           </div>
           <div className="flex items-center ">
-            <img className="w-4 h-4" src={Cartlogo} alt="cartlogo" />
+            <img className="w-4 h-4" src={Cart} alt="cart" />
             <div clasName="w-[2.9375rem] h-[1.6875rem]">Cart</div>
           </div>
           <div className=" flex gap-[2.5rem] ">

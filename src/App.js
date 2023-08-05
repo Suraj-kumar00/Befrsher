@@ -16,31 +16,33 @@ import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
 import SignupForm1 from "./Component/SignupForm1";
 import HeaderForSignUpPage from "./Component/HeaderForSignUpPage";
 import SetUpYourStyle from "./Component/SetUpYourStyle";
+import HeaderAfterLogin from "./Component/HeaderAfterLogin";
+import BodyTermandCondtions from "./Component/BodyTermandCondtions";
 
 function App() {
   return (
     <main className="container-snap  h-screen box-border w-screen text-base">
       <HeaderAfterLogin />
       <BodyTermandCondtions />
-      {/* <Header/> */}
+      {/* <Header />
 
-      {/* <DummyHeaderForSignupForm/> */}
-      {/* <SignupForm1/> */}
-      {/* <HeaderForSignUpPage /> */}
-      {/* <LoginForm/> */}
+      <DummyHeaderForSignupForm />
+      <SignupForm1 />
+      <HeaderForSignUpPage />
+      <LoginForm />
 
-      {/* <SignupForm/> */}
-      {/* <SetUpYourStyle /> */}
-      {/* <HeroSection/>     */}
-      {/* <Categories/> */}
-      {/* <TrendNearrYou/>   */}
-      {/* <TodaysDeal/> */}
-      {/* <MostTrending/> */}
-      {/* <WhyOnlyWe/>  */}
-      {/* <BecomeSeller/> */}
-      {/* <InstagramComp/> */}
-      {/* <Newsletter/> */}
-      {/* <Footer/>   */}
+      <SignupForm />
+      <SetUpYourStyle />
+      <HeroSection />
+      <Categories />
+      <TrendNearrYou />
+      <TodaysDeal />
+      <MostTrending />
+      <WhyOnlyWe />
+      <BecomeSeller />
+      <InstagramComp />
+      <Newsletter /> */}
+      <Footer />
     </main>
   );
 }
