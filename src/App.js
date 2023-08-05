@@ -20,6 +20,8 @@ import SetUpYourStyle from "./Component/SetUpYourStyle";
 function App() {
   return (
     <main className="container-snap  h-screen box-border w-screen text-base">
+      <HeaderAfterLogin />
+      <BodyTermandCondtions />
       {/* <Header/> */}
 
       {/* <DummyHeaderForSignupForm/> */}
