@@ -4,7 +4,7 @@ import Header from "./Component/Header";
 import InstagramComp from "./Component/InstagramComp";
 import { Newsletter } from "./Component/Newsletter";
 import BecomeSeller from "./Component/BecomeSeller";
-import WhyOnlyWe from "./Component/WhyOnlyWe"
+import WhyOnlyWe from "./Component/WhyOnlyWe";
 import MostTrending from "./Component/MostTrending";
 import TodaysDeal from "./Component/TodaysDeal";
 import TrendNearrYou from "./Component/TrendNearrYou";
@@ -14,32 +14,33 @@ import SignupForm from "./Component/SignupForm";
 import LoginForm from "./Component/LoginForm";
 import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
 import SignupForm1 from "./Component/SignupForm1";
-import HeaderForSignUpPage from "./Component/HeaderForSignUpPage"
-import SetUpYourStyle from "./Component/SetUpYourStyle"
+import HeaderForSignUpPage from "./Component/HeaderForSignUpPage";
+import SetUpYourStyle from "./Component/SetUpYourStyle";
 
 function App() {
   return (
-    <main className="container-snap  h-screen box-border w-screen text-base" >
-     {/* <Header/> */}
-    
-     {/* <DummyHeaderForSignupForm/> */}
-     {/* <SignupForm1/> */}
-     <HeaderForSignUpPage/>
-     {/* <LoginForm/> */}
+    <main className="container-snap  h-screen box-border w-screen text-base">
+      <HeaderAfterLogin />
+      <BodyTermandCondtions />
+      {/* <Header/> */}
 
-     {/* <SignupForm/> */}
-     <SetUpYourStyle/>
-     {/* <HeroSection/>     */}
-     {/* <Categories/> */}
-     {/* <TrendNearrYou/>   */}
-     {/* <TodaysDeal/> */}
-     {/* <MostTrending/> */}
+      {/* <DummyHeaderForSignupForm/> */}
+      {/* <SignupForm1/> */}
+      {/* <HeaderForSignUpPage /> */}
+      {/* <LoginForm/> */}
+
+      {/* <SignupForm/> */}
+      {/* <SetUpYourStyle /> */}
+      {/* <HeroSection/>     */}
+      {/* <Categories/> */}
+      {/* <TrendNearrYou/>   */}
+      {/* <TodaysDeal/> */}
+      {/* <MostTrending/> */}
       {/* <WhyOnlyWe/>  */}
-     {/* <BecomeSeller/> */}
+      {/* <BecomeSeller/> */}
       {/* <InstagramComp/> */}
-     {/* <Newsletter/> */}
-     {/* <Footer/>   */}
-     
+      {/* <Newsletter/> */}
+      {/* <Footer/>   */}
     </main>
   );
 }
