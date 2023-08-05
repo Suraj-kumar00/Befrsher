@@ -13,32 +13,17 @@ import HeroSection from "./Component/HeroSection";
 import SignupForm from "./Component/SignupForm";
 import LoginForm from "./Component/LoginForm";
 import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
-import SignupForm1 from "./Component/SignupForm1";
 import HeaderForSignUpPage from "./Component/HeaderForSignUpPage"
 import SetUpYourStyle from "./Component/SetUpYourStyle"
 
 function App() {
   return (
     <main className="container-snap  h-screen box-border w-screen text-base" >
-     {/* <Header/> */}
     
-     {/* <DummyHeaderForSignupForm/> */}
-     {/* <SignupForm1/> */}
-     <HeaderForSignUpPage/>
-     {/* <LoginForm/> */}
 
-     {/* <SignupForm/> */}
+     {/* <SignupForm/>   */}
+     {/* <LoginForm/> */}
      <SetUpYourStyle/>
-     {/* <HeroSection/>     */}
-     {/* <Categories/> */}
-     {/* <TrendNearrYou/>   */}
-     {/* <TodaysDeal/> */}
-     {/* <MostTrending/> */}
-      {/* <WhyOnlyWe/>  */}
-     {/* <BecomeSeller/> */}
-      {/* <InstagramComp/> */}
-     {/* <Newsletter/> */}
-     {/* <Footer/>   */}
      
     </main>
   );

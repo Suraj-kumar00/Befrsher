@@ -3,7 +3,6 @@ import { useState } from 'react';
 import {Formik,Form,Field,ErrorMessage} from 'formik'
 import clsx from 'clsx';
 import CustomInput from './CustomInput';
-import LoginFormGirlImg from '../Images/LoginFormGirlImg.svg'
 import * as Yup from 'yup'
 
 const initialValues={
@@ -19,18 +18,18 @@ const onSubmit= values=>{
 const validationSchema = Yup.object({
     phone:Yup.string()
     .matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
-    ,  'Phone number is not valid').min(10,'number must be atleast 10 digit'),
+    ,  'Phone number is not valid').min(10,'number must be atleast 10 digit').required(),
 
-    otp:Yup.number().typeError("Must be a number")
-    .required("Required"),
-    password:Yup.string().required('PasswordRequired').min(8,
-        'password must contain 8 or more characters with at least one of each: uppercase, lowercase, number and special'
-          )
-          .minLowercase(1, 'password must contain at least 1 lower case letter')
-          .minUppercase(1, 'password must contain at least 1 upper case letter')
-          .minNumbers(1, 'password must contain at least 1 number')
-          .minSymbols(1, 'password must contain at least 1 special character')
-})
+    otp:Yup.number().typeError("Must be a number").required()
+    ,
+    password:Yup.string().required().min(8,
+                'password must contain 8 or more characters with at least one of each: uppercase, lowercase, number and special'
+                  )
+                  .minLowercase(1, 'password must contain at least 1 lower case letter')
+                  .minUppercase(1, 'password must contain at least 1 upper case letter')
+                  .minNumbers(1, 'password must contain at least 1 number')
+                  .minSymbols(1, 'password must contain at least 1 special character')
+        })
 
 
 const LoginForm = () => {
@@ -113,9 +112,7 @@ const LoginForm = () => {
 
     </div>
 
-        <div className="shadow-my_shadow rounded-[2rem] border-2 border-orange-400 max-w-[39.75rem max-h[50.2075]]" >
-                 <img className="h-[100%] rounded-[2rem]"src={LoginFormGirlImg} alt="girlimg"/>
-        </div>
+      
 
 </div>
   )
