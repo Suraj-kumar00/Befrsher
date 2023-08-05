@@ -121,9 +121,9 @@ function SetUpYourStyle() {
 
             <div className="flex flex-col justify-start mt-[2.25rem] sm1:mt-4">    
                  <p className='text-[#8a8a8a] 2xl:text-[1rem] font-medium leading-4 -tracking-tight 4xl:text-[2rem] 2xl:mb-1 4xl:mb-2'>Gender *</p>
-                  <div className="flex justify-between mt-[0.75rem] md:flex-col">
+                  <div className="flex  2xl:justify-between 4xl:gap-14 4xl:items-center  mt-[0.75rem] md:flex-col">
                               <button type="button"
-                                className=' md:mt-1 4xl:text-[2.5rem] 4xl:py-[2rem] 4xl:px-[3rem]  lg:px-7 4xl:max-w-full max-h-[55.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[1.06rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
+                                className=' flex justify-center items-center md:mt-1 4xl:text-[2.5rem] 4xl:py-[2rem] 4xl:px-[2rem]  lg:px-7 2xl:max-w-full 4xl:max-w-[10rem] max-h-[55.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[1.06rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
                                 name="Male"
                                 // type="button"
                                 onClick={(event) => handleClick(event, "Male")}
@@ -132,14 +132,14 @@ function SetUpYourStyle() {
                               </button> 
 
                                <button type="button"
-                                className='md:mt-1 lg:px-7  4xl:max-w-full border-[#8a8a8a] border-[0.06rem] 2xl:py-[1.06rem] 2xl:px-[2.63rem] 2xl:text-[1rem] 4xl:text-[2.5rem] 4xl:py-[2rem] 4xl:px-[3rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
+                                className= 'flex justify-center items-center md:mt-1 4xl:text-[2.5rem] 4xl:py-[2rem] 4xl:px-[2rem]  lg:px-7 2xl:max-w-full 4xl:max-w-[10rem] max-h-[55.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[1.06rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
 
                                 name="Female"
                               >
                                 Female
                               </button>
                                <button type="button"
-                                className=' md:mt-1 lg:px-7 4xl:max-w-full max-h-[55.8125rem] 4xl:text-[2.5rem] 4xl:py-[2rem] 4xl:px-[3rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[1.06rem] 2xl:px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
+                                className=' flex justify-center items-center md:mt-1 4xl:text-[2.5rem] 4xl:py-[2rem] 4xl:px-[2rem]  lg:px-7 2xl:max-w-full 4xl:max-w-[10rem] max-h-[55.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[1.06rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
                                 name="Special"
                               >
                                 Special
@@ -200,7 +200,7 @@ function SetUpYourStyle() {
 
 
             <button type="submit" className=' flex justify-center items-center sm:max-w-full 2xl:p-4 mt-[1.19rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem] 4xl:max-h-[6.13rem] bg-[#494DA2] text-white 2xl:text-[1.3125rem] 4xl:text-[3.3125rem] 4xl:p-8 font-semibold leading-1.31 tracking-tight' >Continue</button>
-            <button type='button' className='flex justify-center items-center sm:max-w-full 2xl:p-4 mt-[0.69rem]   4xl:max-w-full w-full 2xl:max-h-[3.13rem] 4xl:max-h-[5=6.13rem] rounded-[2.5rem] bg-[#494DA2] text-white 2xl:text-[1.3125rem]  4xl:text-[3.3125rem] 4xl:p-8 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
+            <button type='button' className='flex justify-center items-center sm:max-w-full 2xl:p-4 mt-[0.69rem]   4xl:max-w-full w-full 2xl:max-h-[3.13rem] 4xl:max-h-[6.13rem] rounded-[2.5rem] bg-[#494DA2] text-white 2xl:text-[1.3125rem]  4xl:text-[3.3125rem] 4xl:p-8 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
 
         </Form>
 
