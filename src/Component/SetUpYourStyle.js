@@ -127,14 +127,14 @@ return (
           {  "text-white bg-[#484FA2]" : activeButtonIndex===1,
            "text-black" : activeButtonIndex===0
           } ,
-          ' flex justify-center items-center sm:max-w-full lg:max-w-[10rem] p-4 2xl:max-w-[12.5rem] 2xl:max-h-[3.125rem] w-full 4xl:max-w-[16.5rem] 4xl:max-h-[6.125rem] rounded-[0.3125rem]  text-[#fff] 2xl:text-[1.3125rem] 4xl:text-[2.3125rem] border-[#484FA2] border-[1px] font-semibold leading-1.31 tracking-light ]'
+          ' flex justify-center items-center sm:max-w-full md:max-w-[8rem] lg:max-w-[10rem] p-4 2xl:max-w-[12.5rem] 2xl:max-h-[3.125rem] w-full 4xl:max-w-[16.5rem] 4xl:max-h-[6.125rem] rounded-[0.3125rem]  text-[#fff] 2xl:text-[1.3125rem] 4xl:text-[2.3125rem] border-[#484FA2] border-[1px] font-semibold leading-1.31 tracking-light ]'
           )}>Sign Up</div>
       <div onClick={LoginHandler}
       className={clsx(
           {  "text-white bg-[#484FA2]" : activeButtonLogin===1,
            "text-black" : activeButtonLogin===0
           } ,
-          'flex justify-center sm:max-w-full items-center lg:max-w-[10rem] sm:mt-2 2xl:max-w-[12.5rem] 2xl:max-h-[3.125rem] 4xl:max-h-[6.125rem] 4xl:max-w-[16.25rem] w-full rounded-[0.3125rem] border-[1px] border-[#484FA2]  2xl:text-[1.3125rem] 4xl:text-[2.3125rem] p-4 font-semibold leading-1.31 tracking-lighttext-black')}>Login</div>
+          'flex justify-center sm:max-w-full items-center md:max-w-[8rem] lg:max-w-[10rem] sm:mt-2 2xl:max-w-[12.5rem] 2xl:max-h-[3.125rem] 4xl:max-h-[6.125rem] 4xl:max-w-[16.25rem] w-full rounded-[0.3125rem] border-[1px] border-[#484FA2]  2xl:text-[1.3125rem] 4xl:text-[2.3125rem] p-4 font-semibold leading-1.31 tracking-lighttext-black')}>Login</div>
 
       </div>
           
