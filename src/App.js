@@ -20,8 +20,10 @@ function App() {
   return (
     <main className="container-snap  h-screen box-border w-screen text-base" >
     
-
+      <DummyHeaderForSignupForm/>
      {/* <SignupForm/>   */}
+     {/* <Header/> */}
+
      {/* <LoginForm/> */}
      <SetUpYourStyle/>
      
