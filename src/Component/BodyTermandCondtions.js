@@ -5,18 +5,18 @@ import SecondImageOfTermCondition from "../Images/SecondImageOfTermCondition.png
 function BodyTermandCondtions() {
   return (
     <section className="mx-auto max-w-screen-xl">
-      <div className=" relative   w-[59.438rem] m-auto">
+      <div className=" relative   w-[59.438rem] m-auto  mt-[1.88rem]">
         <img
           className=" w-full flex flex-wrap items-center mb-[3.75rem]"
           src={FirstImgaeOfTerm}
           alt="First Term and Conditions Image"
         />
-        <h1 className="text-[1.313rem] absolute left-[3.75rem] top-[3.17rem] text-black font-inter text-xl font-semibold leading-tight tracking-tighter">
+        <h1 className="text-[1.313rem] absolute left-[3.75rem] top-[3.17rem] text-black text-xl font-semibold leading-tight tracking-tighter">
           Terms & Conditions
         </h1>
       </div>
-      <div className="m-auto w-[31.219rem]">
-        <h1 className=" flex justify-center text-center text-[1.313rem] text-black font-inter text-xl font-semibold leading-tight tracking-tighter mb-[1.88rem]">
+      <div className="m-auto w-[31.219rem] ">
+        <h1 className=" flex justify-center text-center text-[1.313rem] text-black  text-xl font-semibold leading-tight tracking-tighter  mb-[1.88rem]">
           TERMS OF USE
         </h1>
         <img
@@ -53,7 +53,7 @@ function BodyTermandCondtions() {
         </p>
       </div>
       <div>
-        <h1 className=" flex justify-center text-center text-[1rem] mb-[1.875rem]  text-black  font-inter text-base font-medium leading-relaxed tracking-tighter uppercase">
+        <h1 className=" flex justify-center text-center text-[1rem] mb-[1.875rem]  text-black  text-base font-medium leading-relaxed tracking-tighter uppercase">
           Term Terminology
         </h1>
         <p className="flex justify-center  text-gray-600 font-normal mb-[3.75rem]  text-justify ml-[17.688rem] mr-[17.375rem]">
@@ -71,7 +71,7 @@ function BodyTermandCondtions() {
         </p>
       </div>
       <div>
-        <h1 className=" flex justify-center text-center text-[1rem] mb-[1.875rem] text-black  font-inter text-base font-medium leading-relaxed tracking-tighter uppercase">
+        <h1 className=" flex justify-center text-center text-[1rem] mb-[1.875rem]  text-black  text-base font-medium leading-relaxed tracking-tighter uppercase">
           Term Terminology
         </h1>
         <p className="flex justify-center text-justify  text-gray-600 font-normal mb-[3.75rem] ml-[17.688rem] mr-[17.375rem]">
@@ -108,7 +108,7 @@ function BodyTermandCondtions() {
         </p>
       </div>
       <div>
-        <h1 className=" flex justify-center text-center text-[1rem] mb-[1.875rem] text-black font-inter text-base font-medium leading-relaxed tracking-tighter uppercase">
+        <h1 className=" flex justify-center text-center text-[1rem] mb-[1.875rem] text-black  text-base font-medium leading-relaxed tracking-tighter uppercase">
           Term Terminology
         </h1>
         <p className="flex justify-center text-justify  text-gray-600 font-normal mb-[3.75rem] ml-[17.688rem] mr-[17.375rem]">

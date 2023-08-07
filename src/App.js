@@ -21,7 +21,7 @@ import BodyTermandCondtions from "./Component/BodyTermandCondtions";
 
 function App() {
   return (
-    <main className="container-snap  h-screen box-border w-screen text-base">
+    <main>
       <HeaderAfterLogin />
       <BodyTermandCondtions />
       {/* <Header />
