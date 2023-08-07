@@ -201,7 +201,7 @@ return (
 
     </div>  
 
-       <div className="shadow-my_shadow rounded-[2rem] relative m-8 border-2 border-green-500  sm:hidden " >
+       <div className="shadow-my_shadow rounded-[2rem] relative m-8   sm:hidden " >
         <img className="h-full absolute inset-0 w-full rounded-[2rem] object-cover object-center " src={formgirlimage} alt="girlimg"/>
       </div> 
       
