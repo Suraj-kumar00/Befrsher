@@ -24,8 +24,8 @@ function App() {
      {/* <SignupForm/>   */}
      {/* <Header/> */}
 
-     <LoginForm/>
-     {/* <SetUpYourStyle/> */}
+     {/* <LoginForm/> */}
+     <SetUpYourStyle/>
      
     </main>
   );

@@ -191,7 +191,6 @@ return (
 
           </div>
 
-
           <button type="submit" className=' flex justify-center items-center sm:max-w-full  mt-[0.8rem]  4xl:max-w-full    w-full 2xl:max-h-[3.13rem] rounded-[2.5rem] 4xl:max-h-[6.13rem] bg-[#494DA2] text-white sm1:text-[1.2rem] 2xl:text-[1.3125rem] 4xl:text-[2rem] 2xl:p-1 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Continue</button>
           <button type='button' className='flex justify-center items-center sm:max-w-full 2xl:p-1 2xl:mt-[0.69rem] 4xl:mt-6   4xl:max-w-full w-full 2xl:max-h-[3.13rem] 4xl:max-h-[6.13rem] rounded-[2.5rem] bg-[#494DA2] text-white 2xl:text-[1.3125rem] sm1:text-[1.2rem] 4xl:text-[2rem] 4xl:p-6 font-semibold leading-1.31 tracking-tight' >Skip For Now</button>
 
@@ -201,7 +200,7 @@ return (
 
     </div>  
 
-       <div className="shadow-my_shadow rounded-[2rem] relative m-8   sm:hidden " >
+       <div className="shadow-my_shadow rounded-[2rem] relative m-8   4xl:block sm:hidden " >
         <img className="h-full absolute inset-0 w-full rounded-[2rem] object-cover object-center " src={formgirlimage} alt="girlimg"/>
       </div> 
       
