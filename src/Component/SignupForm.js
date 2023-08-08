@@ -1,20 +1,12 @@
 import React, { useEffect } from 'react'
 import jwt_decode from 'jwt-decode'
 import formgirlimage from "../Images/formgirlimage.jpg"
-import PhoneInput from "react-phone-input-2"
 import CustomInput from './CustomInput'
-
-// import { GoogleLogin } from '@react-oauth/google';
-// import GoogleButton from 'react-google-button'
-// import FacebookLogin from 'react-facebook-login';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import facebooklogo from '../Images/facebooklogo.svg'
-
 import clsx from 'clsx';
 import { useState } from 'react';
-
 import {Formik,Form,Field,ErrorMessage} from 'formik'
-
 import * as Yup from 'yup'
 import YupPassword from 'yup-password';
 YupPassword(Yup);
@@ -48,8 +40,6 @@ const validationSchema = Yup.object({
       .minSymbols(1, 'password must contain at least 1 special character'),
 
     confirmpassword: Yup.string().oneOf([Yup.ref("password"), null], "Passwords must match").required("Required"),
-  
-
 
 })
 
@@ -58,8 +48,6 @@ function SignupForm() {
     const [activeButtonIndex, setActiveButtonIndex] = useState(0);
     const [activeButtonLogin, setActiveButtonLogin] = useState(0);
     const [user,setUser] = useState({ })
-
-
 
     const SignupHandler = () =>{
         setActiveButtonIndex(1) ;
@@ -70,14 +58,16 @@ function SignupForm() {
         setActiveButtonLogin(1) ;
         setActiveButtonIndex(0);
     }
-        const responseGoogle = (response) =>{
 
-            console.log(response.credential)
-            var userObject =jwt_decode(response.credential)
-            console.log(userObject)
-            setUser(userObject)
-            document.getElementById("signInDiv").hidden = true;
-        }
+    const responseGoogle = (response) =>{
+
+        console.log(response.credential)
+        var userObject =jwt_decode(response.credential)
+        console.log(userObject)
+        setUser(userObject)
+        document.getElementById("signInDiv").hidden = true;
+    }
+
       const responseFacebook = (response) => {
         console.log(response);
       }
@@ -122,21 +112,6 @@ window.google.accounts.id.prompt();
 
 
       },[])
-
-
- 
-// const CustomInputComponent = ({
-//   field, // { name, value, onChange, onBlur }
-//   form: { touched, errors }, // also values, setXXXX, handleXXXX, dirty, isValid, status, etc.
-//   ...props
-// }) => (
-//   <div>
-//     <input type="number" {...field} {...props} />
-//     {touched[field.phone] &&
-//       errors[field.phone] && <div className="error">{errors[field.phone]}</div>}
-//   </div>
-// );
-
    
   return (
     <div className="grid grid-cols-2 gap-[5.62rem] justify-items-center mt-[2.19rem]">
@@ -180,17 +155,13 @@ window.google.accounts.id.prompt();
             type="text"
             placeholder="Phone*"
           />
-           {/* <Field  component={CustomInputComponent} className="border-[1px] border-[#8a8a8a] w-[28.125rem]  h-[3.125rem]   rounded-[0.3125rem] mt-[0.75rem]" type="number" id="phone" name="phone" >
-                         
-          </Field> 
-          <ErrorMessage name='phone'/> */}
             </div>
-            <div className='flex flex-col mt-[3.62rem]'>
+
+             <div className='flex flex-col mt-[3.62rem]'>
             
                         <Field className="border-[1px]    py-[1.06rem] pl-[1.56rem]    max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] " type="password" name="password" id="password" placeholder="Password*"></Field>
                         <ErrorMessage name='password'/>
             </div>
-            
             <div className='flex flex-col mt-[3.62rem]'>
 
                         <Field className="border-[1px] py-[1.06rem] pl-[1.56rem] max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] " type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password *"></Field>
@@ -241,21 +212,14 @@ window.google.accounts.id.prompt();
           )}
       />
 </div>
-        
-
-
-
         </Form>
-
-       
-
 
     </Formik>
 
       </div>  
 
         <div className="shadow-my_shadow rounded-[2rem] border-2 border-orange-400 max-w-[39.75rem max-h[50.2075]]" >
-          <img className="h-[100%] rounded-[2rem]"src={formgirlimage} alt="girlimg"/>
+          <img className="h-[100%] rounded-[2rem]" src={formgirlimage} alt="girlimg"/>
         </div>
         
     </div>

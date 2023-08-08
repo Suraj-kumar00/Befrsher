@@ -23,7 +23,9 @@ import AboutUsWithLogin from "./Component/AboutUsWithLogin";
 function App() {
   return (
     <main>
-      <HeaderAfterLogin />
+
+
+<HeaderAfterLogin />
       <AboutUsWithLogin />
       {/* <BodyTermandCondtions /> */}
       {/* <Header />
@@ -44,9 +46,15 @@ function App() {
       <BecomeSeller />
       <InstagramComp />
       <Newsletter /> */}
-      <Footer />
-    </main>
-  );
-}
+      
+      {/* <DummyHeaderForSignupForm/> */}
+     {/* <SignupForm/>   */}
+     {/* <Header/> */}
 
-export default App;
+     {/* <LoginForm/> */}
+     {/* <SetUpYourStyle/> */}
+      <Footer />
+
+    </main>
+     
+  
