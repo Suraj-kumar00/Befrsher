@@ -87,7 +87,7 @@ return (
                     <img className=" h-full rounded-[2rem]" src={formgirlimage} alt="girlimg"/>
          </div>
 
-    <div  className=" border-2 border-green-500 2xl:max-h-full flex sm:mt-4 md:max-h-full m-1 4xl:max-w-full 4xl:w-full sm:max-w-md 4xl:max-h-screen ">
+    <div  className=" 2xl:max-h-full flex sm:mt-4 md:max-h-full m-1 4xl:max-w-full 4xl:w-full sm:max-w-md 4xl:max-h-screen ">
     <Formik
   initialValues={initialValues}
   validationSchema = {validationSchema}
