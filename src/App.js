@@ -18,12 +18,14 @@ import HeaderForSignUpPage from "./Component/HeaderForSignUpPage";
 import SetUpYourStyle from "./Component/SetUpYourStyle";
 import HeaderAfterLogin from "./Component/HeaderAfterLogin";
 import BodyTermandCondtions from "./Component/BodyTermandCondtions";
+import AboutUsWithLogin from "./Component/AboutUsWithLogin";
 
 function App() {
   return (
     <main>
       <HeaderAfterLogin />
-      <BodyTermandCondtions />
+      <AboutUsWithLogin />
+      {/* <BodyTermandCondtions /> */}
       {/* <Header />
 
       <DummyHeaderForSignupForm />
