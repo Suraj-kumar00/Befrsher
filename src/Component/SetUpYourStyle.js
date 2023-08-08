@@ -24,7 +24,7 @@ const validationSchema = Yup.object({
   fashionid:Yup.string(),
       dob:Yup.string().required("Required"),
       city:Yup.string().required("Required"),
-      area:Yup.string().required("Required"),
+      area:Yup.number().test('len', 'picode must be 6 digit', val => val && val.toString().length === 6 ),
       whatsappnum:Yup.string()
       .matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
       ,  'Phone number is not valid').min(10,'number must be atleast 10 digit').required(),
@@ -87,7 +87,7 @@ return (
                     <img className=" h-full rounded-[2rem]" src={formgirlimage} alt="girlimg"/>
          </div>
 
-    <div  className=" 2xl:max-h-full flex sm:mt-4 md:max-h-full m-1 4xl:max-w-full 4xl:w-full sm:max-w-md  ">
+    <div  className=" border-2 border-green-500 2xl:max-h-full flex sm:mt-4 md:max-h-full m-1 4xl:max-w-full 4xl:w-full sm:max-w-md 4xl:max-h-screen ">
     <Formik
   initialValues={initialValues}
   validationSchema = {validationSchema}
@@ -115,7 +115,7 @@ return (
 
           <div className="flex flex-col justify-start mt-[0.8rem] sm1:mt-4">    
                <p className='text-[#8a8a8a] 2xl:text-[1rem] font-medium leading-4 -tracking-tight 4xl:text-[1.8rem] 2xl:mb-1 4xl:mb-2 text-left'>Gender *</p>
-                <div className="flex  4xl:justify-between 4xl:gap-8 md:gap-0 4xl:items-center  mt-[0.2rem] md:flex-col">
+                <div className="flex  4xl:justify-between 4xl:gap-8 md:gap-2 4xl:items-center  mt-[0.2rem] ">
                             <button type="button"
                               className=' flex justify-center items-center lg:w-[18rem] md:mt-1 4xl:text-[1.5rem] 4xl:py-[1.3rem] 4xl:px-[2rem]  lg:px-2 2xl:max-w-full md:w-full   4xl:max-w-[18rem] max-h-[15.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[.5rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
                               name="Male"
@@ -148,7 +148,7 @@ return (
                   <ErrorMessage name='city' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
                   </div>
                   <div className='flex flex-col '>
-                  <Field className=" md:mt-1 sm:mt-[0.8rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem] 2xl:max-w-[10rem]  2xl:max-h-[2.125rem] 4xl:max-h-[4.125rem] py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="area" name="area" placeholder="Area *" />
+                  <Field className=" md:mt-1 sm:mt-[0.8rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem] 2xl:max-w-[10rem]  2xl:max-h-[2.125rem] 4xl:max-h-[4.125rem] py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="number" id="area" name="area" placeholder="Area *" />
                             <ErrorMessage name='area' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
                   </div>
           </div>
@@ -171,7 +171,7 @@ return (
             <div> 
             <Field type="checkbox" name="terms" />
                 
-                <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-widest text-[#484FA2] 4xl:text-xl">
+                <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[rgb(72,79,162)] 4xl:text-xl">
                   Terms & Conditions *
                 </label>
 
@@ -185,7 +185,7 @@ return (
           <div className='flex mt-[0.8rem] md:mt-2'>
           <Field type="checkbox" name="promomsg"  />
 
-                <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-widest text-[#484FA2] 4xl:text-xl ">
+                <label className=" ml-[0.75rem] font-medium 2xl:text-xs leading-3 -tracking-normal text-[#484FA2] 4xl:text-xl ">
                 Get Promotional messages through whatsapp 
                 </label>
 
