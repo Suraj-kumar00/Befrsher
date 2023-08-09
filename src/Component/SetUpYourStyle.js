@@ -1,5 +1,5 @@
 import React from "react";
-import formgirlimage from "../";
+import formgirlimage from "../Images/formgirlimage.jpg";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import MyTextArea from "./CustomTextArea";
