@@ -100,7 +100,37 @@ logo_alignment: "center",
 click_listener: onClickHandler
 }
 )
+const signInDiv1 = document.getElementById("signInDiv1")
+// eslint-disable-next-line no-undef
+window.google.accounts.id.renderButton(
 
+signInDiv1,{
+
+theme:'outline',
+size:"large",
+width:313,
+text: "signup_with",
+shape:'pill',
+logo_alignment: "center",
+click_listener: onClickHandler
+}
+)
+
+const signInDivlg = document.getElementById("signInDivlg")
+// eslint-disable-next-line no-undef
+window.google.accounts.id.renderButton(
+
+signInDivlg,{
+
+theme:'outline',
+size:"large",
+width:312,
+text: "signup_with",
+shape:'pill',
+logo_alignment: "center",
+click_listener: onClickHandler
+}
+)
 window.google.accounts.id.prompt();
 
 
@@ -120,7 +150,7 @@ window.google.accounts.id.prompt();
             initialValues={initialValues}
             validationSchema = {validationSchema}
             onSubmit = {onSubmit}>
-            <Form  className="max-w-[31.25rem] lg:max-w-[20rem] md:mt-1 ">
+            <Form  className="max-w-[31.25rem] lg:max-w-[20rem] md:mt-1  border-2 border-r-lime-700">
         <div className='flex gap-x-[1.88rem] justify-between 4xl:max-w-[28.125rem] '>       
 
         <div onClick={SignupHandler}
@@ -172,13 +202,13 @@ window.google.accounts.id.prompt();
 
 
               
-            <div className=' mt-[1.88rem] xl:mt-5'>
+            <div className=' mt-[1.88rem] xl:mt-5  flex'>
             <svg xmlns="http://www.w3.org/2000/svg" width="500" height="2" viewBox="0 0 500 2" fill="none">
             <path d="M0 1H500" stroke="#8A8A8A"/>
             </svg>
             </div>
 
-            <div   className=' mt-[1.88rem]  xl:mt-4 4xl:w-[28.125rem]  flex items-center justify-center lg:max-w-[18rem] border-2 border-yellow-800'>        
+            <div   className=' mt-[1.88rem]  xl:mt-4 4xl:w-[28.125rem]  flex m-auto lg:max-w-[18rem] border-2 border-yellow-800 lg:hidden  4xl:block'>        
             <div id="signInDiv"  className=' '></div>
             { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
@@ -196,6 +226,42 @@ window.google.accounts.id.prompt();
 
             } 
             </div>      
+            <div   className=' mt-[1.88rem]  xl:mt-4 4xl:w-[28.125rem]  flex lg:max-w-[18rem] border-2 border-blue-800  4xl:hidden lg:block md:hidden'>        
+            <div id="signInDivlg"  className=' '></div>
+            { Object.keys(user).length !== 
+          <button onClick={(e) => handleSignOut(e)}>SignOut</button>
+ 
+            }
+        
+         {user && 
+                    <div>
+                      { user.picture &&
+                      <img src={user.picture} alt="userpic"/>
+
+                      }
+                      <h3>{user.name}</h3>
+                    </div>
+
+            } 
+            </div>      
+            <div   className=' mt-[1.88rem]   flex border-yellow-400 border-2  md:block 4xl:hidden'>        
+            <div id="signInDiv1"  className=' '></div>
+            { Object.keys(user).length !== 
+          <button onClick={(e) => handleSignOut(e)}>SignOut</button>
+ 
+            }
+        
+         {user && 
+                    <div>
+                      { user.picture &&
+                      <img src={user.picture} alt="userpic"/>
+
+                      }
+                      <h3>{user.name}</h3>
+                    </div>
+
+            } 
+            </div> 
 
 <div className=' flex justify-center max-w-[28.125rem] mt-[1.88rem] xl:mt-[1rem]'>
 <FacebookLogin
@@ -215,8 +281,8 @@ window.google.accounts.id.prompt();
 
     </div>
 
-      <div className="relative shadow-my_shadow rounded-[2rem] border-2 border-orange-400 max-w-[39rem] w-full h-screen md:hidden 4xl:block" >
-          <img className="absolute object-cover object-center h-full w-full  rounded-[2rem] md:hidden" src={LoginFormGirlImg} alt="girlimg"/>
+      <div className="relative shadow-my_shadow rounded-[2rem] border-2 border-orange-400 max-w-[39rem] w-full md:hidden 4xl:block" >
+          <img className="absolute inset-0 object-cover object-center h-full w-full  rounded-[2rem] md:hidden" src={LoginFormGirlImg} alt="girlimg"/>
         </div>
 
 </div>
