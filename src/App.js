@@ -23,8 +23,8 @@ import AboutUsWithLogin from "./Component/AboutUsWithLogin";
 function App() {
   return (
     <main>
-      <HeaderAfterLogin />
-      <AboutUsWithLogin />
+      {/* <HeaderAfterLogin />
+      <AboutUsWithLogin /> */}
       {/* <BodyTermandCondtions /> */}
       {/* <Header />
 
@@ -45,13 +45,13 @@ function App() {
       <InstagramComp />
       <Newsletter /> */}
 
-      {/* <DummyHeaderForSignupForm/> */}
-      {/* <SignupForm/>   */}
-      {/* <Header/> */}
+      <DummyHeaderForSignupForm />
+      <SignupForm />
+      <Header />
 
-      {/* <LoginForm/> */}
-      {/* <SetUpYourStyle/> */}
-      <Footer />
+      <LoginForm />
+      <SetUpYourStyle />
+      {/* <Footer /> */}
     </main>
   );
 }
