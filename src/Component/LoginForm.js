@@ -114,7 +114,7 @@ signInDiv1,{
 
 theme:'outline',
 size:"large",
-width:300,
+width:320,
 text: "signup_with",
 shape:'pill',
 logo_alignment: "center",
@@ -250,7 +250,7 @@ window.google.accounts.id.prompt();
 
             } 
             </div>      
-            <div   className=' mt-[1.88rem] 2xl:mt-4  flex border-2  md:block 4xl:hidden max-h-[3.125rem]'>        
+            <div   className=' mt-[1.88rem] 2xl:mt-4  flex   md:block 4xl:hidden max-h-[3.125rem]'>        
             <div id="signInDiv1"  className=' '></div>
             { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
