@@ -269,7 +269,7 @@ window.google.accounts.id.prompt();
             } 
             </div> 
 
-<div className=' flex m-auto max-w-[28.125rem] mt-[1.88rem] 2xl:mt-4 max-h-[3.125rem]'>
+<div className=' flex m-auto max-w-[28.125rem] mt-[1.88rem] 2xl:mt-4 max-h-[3.125rem] mb-2'>
 <FacebookLogin
          appId="" //APP ID NOT CREATED YET         fields="name,email,picture"   
                     autoLoad     
