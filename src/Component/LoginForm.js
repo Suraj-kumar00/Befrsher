@@ -25,7 +25,7 @@ const validationSchema = Yup.object({
     .matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
     ,  'Phone number is not valid').min(10,'number must be atleast 10 digit').required(),
 
-    otp:Yup.number().typeError("Must be a number").required()
+    otp:Yup.string().matches(/^[0-9]*$/)
     // .when("password",{
     //       is:true,
     //       then:Yup.string(),
@@ -164,14 +164,14 @@ window.google.accounts.id.prompt();
             {  "text-white bg-[#484FA2]" : activeButtonIndex===1,
              "text-black" : activeButtonIndex===0
             } ,
-            ' flex justify-center items-center max-h-[3.125rem] 4xl:py-3 4xl:px-14 2xl:py-2 lg:px-8 rounded-[0.3125rem]  text-[#fff] text-[1.3125rem] lg:text-[1rem] border-[#484FA2] border-[1px] font-semibold leading-1.31 tracking-light ]'
+            ' flex justify-center items-center max-h-[3.125rem]  4xl:py-3 4xl:px-14 2xl:py-2 lg:px-8 rounded-[0.3125rem]  border-[1px]  text-[#fff] text-[1.3125rem] lg:text-[1rem] border-[#484FA2] font-semibold leading-1.31 tracking-light ]'
             )}>Sign Up</div>
         <div onClick={LoginHandler}
              className={clsx(
             {  "text-white bg-[#484FA2]" : activeButtonLogin===1,
              "text-black" : activeButtonLogin===0
             } ,
-            'flex justify-center items-center   max-h-[3.125rem] 2xl:py-2 px-14 rounded-[0.3125rem] border-[1px] border-[#484FA2]  text-[1.3125rem] lg:text-[1rem] font-semibold leading-1.31 tracking-lighttext-black')}>Login</div>
+            'flex justify-center items-center   max-h-[3.125rem] 4xl:py-3 4xl:px-14 2xl:py-2 lg:px-8 rounded-[0.3125rem] border-[1px]  border-[#484FA2]  text-[1.3125rem] lg:text-[1rem] font-semibold leading-1.31 tracking-light text-black')}>Login</div>
 
         </div>
         
@@ -187,7 +187,7 @@ window.google.accounts.id.prompt();
 
             <div className='flex flex-col 4xl:mt-[2.62rem] 2xl:mt-4 '>
                     <Field className="border-[1px]  flex  py-[1.06rem] pl-[1.56rem] xl:py-[0.8rem] max-h-[3.125rem]  max-w-[28.125rem]
-                     border-[#8A8A8A] rounded-[0.3125rem] " type="number" name="otp" id="otp" placeholder="One Time Password (OTP) *"></Field>
+                     border-[#8A8A8A] rounded-[0.3125rem] " type="text" name="otp" id="otp" placeholder="One Time Password (OTP) *"></Field>
                     <ErrorMessage name='otp'/>
             </div>
 
