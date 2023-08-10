@@ -4,7 +4,7 @@ import {Formik,Form,Field,ErrorMessage} from 'formik'
 import clsx from 'clsx';
 import CustomInput from './CustomInput';
 import * as Yup from 'yup'
-import LoginFormGirlImg from "../Images/LoginFormGirlImg.svg"
+import LoginFormGirlImg from "../Images/logingirlimage.png"
 import jwt_decode from 'jwt-decode'
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import facebooklogo from '../Images/facebooklogo.svg'
@@ -146,8 +146,8 @@ window.google.accounts.id.prompt();
 
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-1 justify-items-center  ">
-      <div className=" shadow-my_shadow rounded-[2rem]  4xl:max-w-[39rem] md:max-w-[20rem] md:w-[20rem]  md:max-h-[15rem] 4xl:hidden md:block" >
+    <div className="grid grid-cols-2 md:grid-cols-1 justify-items-center  justify-center mt-3">
+      <div className=" shadow-lg rounded-[2rem]  4xl:max-w-[39rem] md:max-w-[20rem] md:w-[20rem]  md:max-h-[12rem] 4xl:hidden md:block" >
           <img className="4xl:object-cover 4xl:object-center md:object-cover md:object-top h-full w-full  rounded-[2rem]" src={LoginFormGirlImg} alt="girlimg"/>
         </div>
       <div  className=" max-w-[31.25rem] ">
@@ -164,18 +164,18 @@ window.google.accounts.id.prompt();
             {  "text-white bg-[#484FA2]" : activeButtonIndex===1,
              "text-black" : activeButtonIndex===0
             } ,
-            ' flex justify-center items-center  4xl:py-3 4xl:px-14 lg:py-2 lg:px-8 rounded-[0.3125rem]  text-[#fff] text-[1.3125rem] lg:text-[1rem] border-[#484FA2] border-[1px] font-semibold leading-1.31 tracking-light ]'
+            ' flex justify-center items-center max-h-[3.125rem] 4xl:py-3 4xl:px-14 2xl:py-2 lg:px-8 rounded-[0.3125rem]  text-[#fff] text-[1.3125rem] lg:text-[1rem] border-[#484FA2] border-[1px] font-semibold leading-1.31 tracking-light ]'
             )}>Sign Up</div>
         <div onClick={LoginHandler}
              className={clsx(
             {  "text-white bg-[#484FA2]" : activeButtonLogin===1,
              "text-black" : activeButtonLogin===0
             } ,
-            'flex justify-center items-center py-3 px-14 rounded-[0.3125rem] border-[1px] border-[#484FA2]  text-[1.3125rem] lg:text-[1rem] font-semibold leading-1.31 tracking-lighttext-black')}>Login</div>
+            'flex justify-center items-center   max-h-[3.125rem] 2xl:py-2 px-14 rounded-[0.3125rem] border-[1px] border-[#484FA2]  text-[1.3125rem] lg:text-[1rem] font-semibold leading-1.31 tracking-lighttext-black')}>Login</div>
 
         </div>
         
-        <div className='flex flex-col mt-[2.62rem] xl:mt-5'>
+        <div className='flex flex-col mt-[2.62rem] 2xl:mt-4 '>
             <CustomInput
             label=""
             name="phone"
@@ -185,16 +185,16 @@ window.google.accounts.id.prompt();
          
         </div>
 
-            <div className='flex flex-col mt-[2.62rem] xl:mt-5 '>
-                    <Field className="border-[1px]    py-[1.06rem] pl-[1.56rem] xl:py-[0.8rem]   max-w-[28.125rem]
+            <div className='flex flex-col 4xl:mt-[2.62rem] 2xl:mt-4 '>
+                    <Field className="border-[1px]  flex  py-[1.06rem] pl-[1.56rem] xl:py-[0.8rem] max-h-[3.125rem]  max-w-[28.125rem]
                      border-[#8A8A8A] rounded-[0.3125rem] " type="number" name="otp" id="otp" placeholder="One Time Password (OTP) *"></Field>
                     <ErrorMessage name='otp'/>
             </div>
 
-            <p className='flex  mt-[1.31rem] lg:mt-2 justify-center items-center max-w-[28.125rem]'>OR</p>
+            <p className='flex  mt-[1rem] 2xl:mt-3 justify-center items-center max-w-[28.125rem] max-h-[1.15rem]'>OR</p>
 
-            <div className='flex flex-col mt-[1.31rem] lg:mt-2 xl:mt-5'>
-                    <Field className="border-[1px]    4xl:py-[1.06rem] xl:py-[0.8rem] pl-[1.56rem]    max-w-[28.125rem]  border-[#8A8A8A] rounded-[0.3125rem] " type="password" name="password" id="password" placeholder="Password*"></Field>
+            <div className='flex flex-col mt-[1.31rem] lg:mt-2 2xl:mt-3  '>
+                    <Field className="border-[1px]  max-h-[3.125rem]  4xl:py-[1.06rem] xl:py-[0.8rem] pl-[1.56rem]    max-w-[28.125rem]  border-[#8A8A8A] rounded-[0.3125rem] " type="password" name="password" id="password" placeholder="Password*"></Field>
                     <ErrorMessage name='password'/>
             </div>
 
@@ -204,17 +204,17 @@ window.google.accounts.id.prompt();
 
             <div className="max-w-[8rem] text-[#484FA2] text-[1rem] mt-[0.88rem] font-normal leading-4 tracking-tight">Forget password</div>
 
-            <button type='submit' className='p-4 mt-[2.75rem] xl:mt-5 max-w-[28.125rem] w-full  rounded-[2.5rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight' >Login</button>
+            <button type='submit' className='p-4 mt-[2.75rem] 2xl:mt-4 max-w-[28.125rem] w-full max-h-[3.125rem] rounded-[2.5rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight' >Login</button>
 
 
               
-            <div className=' mt-[1.88rem] xl:mt-5  flex'>
+            <div className=' mt-[1.0rem] xl:mt-5  flex w-full max-w-[28.125rem]'>
             <svg xmlns="http://www.w3.org/2000/svg" width="500" height="2" viewBox="0 0 500 2" fill="none">
             <path d="M0 1H500" stroke="#8A8A8A"/>
             </svg>
             </div>
 
-            <div   className=' mt-[1.88rem]  xl:mt-4 4xl:w-[28.125rem]  flex m-auto lg:max-w-[18rem]  lg:hidden  4xl:block'>        
+            <div   className=' mt-[1.88rem]  2xl:mt-4 4xl:w-[28.125rem]  flex m-auto lg:max-w-[18rem]  lg:hidden  4xl:block max-h-[3.125rem]'>        
             <div id="signInDiv"  className=' '></div>
             { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
@@ -232,7 +232,7 @@ window.google.accounts.id.prompt();
 
             } 
             </div>      
-            <div   className=' mt-[1.88rem]  xl:mt-4 4xl:w-[28.125rem]  flex lg:max-w-[18rem]\  4xl:hidden lg:block md:hidden'>        
+            <div   className=' mt-[1.88rem]  2xl:mt-4 4xl:w-[28.125rem]  flex lg:max-w-[18rem]\  4xl:hidden lg:block md:hidden max-h-[3.125rem]'>        
             <div id="signInDivlg"  className=' '></div>
             { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
@@ -250,7 +250,7 @@ window.google.accounts.id.prompt();
 
             } 
             </div>      
-            <div   className=' mt-[1.88rem]   flex border-2  md:block 4xl:hidden'>        
+            <div   className=' mt-[1.88rem] 2xl:mt-4  flex border-2  md:block 4xl:hidden max-h-[3.125rem]'>        
             <div id="signInDiv1"  className=' '></div>
             { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
@@ -269,7 +269,7 @@ window.google.accounts.id.prompt();
             } 
             </div> 
 
-<div className=' flex justify-center max-w-[28.125rem] mt-[1.88rem] xl:mt-[1rem]'>
+<div className=' flex m-auto max-w-[28.125rem] mt-[1.88rem] 2xl:mt-4 max-h-[3.125rem]'>
 <FacebookLogin
          appId="" //APP ID NOT CREATED YET         fields="name,email,picture"   
                     autoLoad     
@@ -287,8 +287,8 @@ window.google.accounts.id.prompt();
 
     </div>
 
-      <div className="relative shadow-my_shadow rounded-[2rem]  max-w-[39rem] w-full md:hidden 4xl:block" >
-          <img className="absolute inset-0 object-cover object-center h-full w-full  rounded-[2rem] md:hidden" src={LoginFormGirlImg} alt="girlimg"/>
+      <div className=" shadow-my_shadow rounded-[2rem]  max-w-[28rem] w-full md:hidden 4xl:block " >
+          <img className=" object-cover h-full w-full  rounded-[2rem] md:hidden" src={LoginFormGirlImg} alt="girlimg"/>
         </div>
 
 </div>
