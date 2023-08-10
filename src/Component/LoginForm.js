@@ -26,15 +26,21 @@ const validationSchema = Yup.object({
     ,  'Phone number is not valid').min(10,'number must be atleast 10 digit').required(),
 
     otp:Yup.number().typeError("Must be a number").required()
+    // .when("password",{
+    //       is:true,
+    //       then:Yup.string(),
+    //       otherwise:Yup.string().required(),
+    //   })
     ,
-    password:Yup.string().required().min(8,
-                'password must contain 8 or more characters with at least one of each: uppercase, lowercase, number and special'
-                  )
-                  .minLowercase(1, 'password must contain at least 1 lower case letter')
-                  .minUppercase(1, 'password must contain at least 1 upper case letter')
-                  .minNumbers(1, 'password must contain at least 1 number')
-                  .minSymbols(1, 'password must contain at least 1 special character')
-        })
+    password:Yup.string().required()
+    // .when("otp",{
+    //   is:true,
+    //   then:Yup.string(),
+    //   otherwise:Yup.string().required(),
+    // })
+     
+
+        },["otp","password"])
 
 
 const LoginForm = () => {
@@ -108,7 +114,7 @@ signInDiv1,{
 
 theme:'outline',
 size:"large",
-width:313,
+width:300,
 text: "signup_with",
 shape:'pill',
 logo_alignment: "center",
@@ -124,7 +130,7 @@ signInDivlg,{
 
 theme:'outline',
 size:"large",
-width:312,
+width:308,
 text: "signup_with",
 shape:'pill',
 logo_alignment: "center",
@@ -140,8 +146,8 @@ window.google.accounts.id.prompt();
 
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-1 justify-items-center  border-2 border-red-500 mt-2">
-      <div className=" shadow-my_shadow rounded-[2rem] border-2 border-orange-400 4xl:max-w-[39rem] md:max-w-[20rem] md:w-[20rem]  md:max-h-[15rem] 4xl:hidden md:block" >
+    <div className="grid grid-cols-2 md:grid-cols-1 justify-items-center  ">
+      <div className=" shadow-my_shadow rounded-[2rem]  4xl:max-w-[39rem] md:max-w-[20rem] md:w-[20rem]  md:max-h-[15rem] 4xl:hidden md:block" >
           <img className="4xl:object-cover 4xl:object-center md:object-cover md:object-top h-full w-full  rounded-[2rem]" src={LoginFormGirlImg} alt="girlimg"/>
         </div>
       <div  className=" max-w-[31.25rem] ">
@@ -150,7 +156,7 @@ window.google.accounts.id.prompt();
             initialValues={initialValues}
             validationSchema = {validationSchema}
             onSubmit = {onSubmit}>
-            <Form  className="max-w-[31.25rem] lg:max-w-[20rem] md:mt-1  border-2 border-r-lime-700">
+            <Form  className="max-w-[31.25rem] lg:max-w-[20rem] md:mt-1">
         <div className='flex gap-x-[1.88rem] justify-between 4xl:max-w-[28.125rem] '>       
 
         <div onClick={SignupHandler}
@@ -208,7 +214,7 @@ window.google.accounts.id.prompt();
             </svg>
             </div>
 
-            <div   className=' mt-[1.88rem]  xl:mt-4 4xl:w-[28.125rem]  flex m-auto lg:max-w-[18rem] border-2 border-yellow-800 lg:hidden  4xl:block'>        
+            <div   className=' mt-[1.88rem]  xl:mt-4 4xl:w-[28.125rem]  flex m-auto lg:max-w-[18rem]  lg:hidden  4xl:block'>        
             <div id="signInDiv"  className=' '></div>
             { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
@@ -226,7 +232,7 @@ window.google.accounts.id.prompt();
 
             } 
             </div>      
-            <div   className=' mt-[1.88rem]  xl:mt-4 4xl:w-[28.125rem]  flex lg:max-w-[18rem] border-2 border-blue-800  4xl:hidden lg:block md:hidden'>        
+            <div   className=' mt-[1.88rem]  xl:mt-4 4xl:w-[28.125rem]  flex lg:max-w-[18rem]\  4xl:hidden lg:block md:hidden'>        
             <div id="signInDivlg"  className=' '></div>
             { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
@@ -244,7 +250,7 @@ window.google.accounts.id.prompt();
 
             } 
             </div>      
-            <div   className=' mt-[1.88rem]   flex border-yellow-400 border-2  md:block 4xl:hidden'>        
+            <div   className=' mt-[1.88rem]   flex border-2  md:block 4xl:hidden'>        
             <div id="signInDiv1"  className=' '></div>
             { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
@@ -281,7 +287,7 @@ window.google.accounts.id.prompt();
 
     </div>
 
-      <div className="relative shadow-my_shadow rounded-[2rem] border-2 border-orange-400 max-w-[39rem] w-full md:hidden 4xl:block" >
+      <div className="relative shadow-my_shadow rounded-[2rem]  max-w-[39rem] w-full md:hidden 4xl:block" >
           <img className="absolute inset-0 object-cover object-center h-full w-full  rounded-[2rem] md:hidden" src={LoginFormGirlImg} alt="girlimg"/>
         </div>
 
