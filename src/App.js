@@ -28,6 +28,7 @@ function App() {
       {/* <BodyTermandCondtions /> */}
       {/* <Header />
 
+
       <DummyHeaderForSignupForm />
       <SignupForm1 />
       <HeaderForSignUpPage />
@@ -45,13 +46,12 @@ function App() {
       <InstagramComp />
       <Newsletter /> */}
 
-      {/* <DummyHeaderForSignupForm/> */}
-      {/* <SignupForm/>   */}
-      {/* <Header/> */}
+      
 
       {/* <LoginForm/> */}
       {/* <SetUpYourStyle/> */}
       <Footer />
+
     </main>
   );
 }

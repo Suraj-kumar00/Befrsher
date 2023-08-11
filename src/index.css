@@ -5,10 +5,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.container-snap {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-.container-snap::-webkit-scrollbar {
-    display: none;
-}
