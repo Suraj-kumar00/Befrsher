@@ -14,8 +14,12 @@ import SignupForm from "./Component/SignupForm";
 import SignupForm1 from "./Component/SignupForm1"
 import LoginForm from "./Component/LoginForm";
 import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
-import HeaderForSignUpPage from "./Component/HeaderForSignUpPage"
-import SetUpYourStyle from "./Component/SetUpYourStyle"
+import SignupForm1 from "./Component/SignupForm1";
+import HeaderForSignUpPage from "./Component/HeaderForSignUpPage";
+import SetUpYourStyle from "./Component/SetUpYourStyle";
+import HeaderAfterLogin from "./Component/HeaderAfterLogin";
+import BodyTermandCondtions from "./Component/BodyTermandCondtions";
+import AboutUsWithLogin from "./Component/AboutUsWithLogin";
 
 function App() {
   return (
@@ -32,6 +36,36 @@ function App() {
      {/* <LoginForm/> */}
      {/* <SetUpYourStyle/> */}
      
+    <main>
+      <HeaderAfterLogin />
+      <AboutUsWithLogin />
+      {/* <BodyTermandCondtions /> */}
+      {/* <Header />
+
+
+      <DummyHeaderForSignupForm />
+      <SignupForm1 />
+      <HeaderForSignUpPage />
+      <LoginForm />
+
+      <SignupForm />
+      <SetUpYourStyle />
+      <HeroSection />
+      <Categories />
+      <TrendNearrYou />
+      <TodaysDeal />
+      <MostTrending />
+      <WhyOnlyWe />
+      <BecomeSeller />
+      <InstagramComp />
+      <Newsletter /> */}
+
+      
+
+      {/* <LoginForm/> */}
+      {/* <SetUpYourStyle/> */}
+      <Footer />
+
     </main>
   );
 }
