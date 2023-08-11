@@ -11,6 +11,7 @@ import TrendNearrYou from "./Component/TrendNearrYou";
 import Categories from "./Component/Categories";
 import HeroSection from "./Component/HeroSection";
 import SignupForm from "./Component/SignupForm";
+import SignupForm1 from "./Component/SignupForm1"
 import LoginForm from "./Component/LoginForm";
 import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
 import HeaderForSignUpPage from "./Component/HeaderForSignUpPage"
@@ -21,10 +22,14 @@ function App() {
     <main className="container-snap  h-screen box-border w-screen text-base" >
     
       <DummyHeaderForSignupForm/>
-     {/* <SignupForm/>   */}
-     {/* <Header/> */}
+     <SignupForm/>  
+     {/* <SignupForm1/> */}
+     {/* <Header/>
+     <Categories/>
+     <HeroSection/>
+     <HeaderForSignUpPage/> */}
 
-     <LoginForm/>
+     {/* <LoginForm/> */}
      {/* <SetUpYourStyle/> */}
      
     </main>

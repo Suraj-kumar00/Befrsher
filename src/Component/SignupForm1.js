@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import jwt_decode from 'jwt-decode'
-import formgirlimage from "../src/Images/formgirlimage.jpg"
+import formgirlimage from "../Images/formgirlimage.jpg"
 //THis is responsive one 
 // import { GoogleLogin } from '@react-oauth/google';
 // import GoogleButton from 'react-google-button'

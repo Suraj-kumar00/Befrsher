@@ -92,6 +92,9 @@ function SignupForm() {
 })
 
 const signInDiv =      document.getElementById("signInDiv")
+const signInDivxl =      document.getElementById("signInDiv-xl")
+const signInDivmd =      document.getElementById("signInDiv-md")
+const signInDivsm1 =      document.getElementById("signInDiv-sm1")
 // eslint-disable-next-line no-undef
 window.google.accounts.id.renderButton(
 
@@ -106,6 +109,37 @@ signInDiv,{
     click_listener: onClickHandler
 }
 )
+window.google.accounts.id.renderButton(
+
+   
+  signInDivxl,{
+      theme:'outline',
+  size:"large",
+
+      width:300,
+  }
+  )
+  window.google.accounts.id.renderButton(
+
+ 
+      signInDivmd,{
+          theme:'outline',
+      size:"large",
+  
+          width:400,
+      }
+      )
+      window.google.accounts.id.renderButton(
+
+ 
+          signInDivsm1,{
+              theme:'outline',
+          size:"large",
+      
+              width:280,
+          }
+          )
+
 
 window.google.accounts.id.prompt();
 
@@ -114,37 +148,39 @@ window.google.accounts.id.prompt();
       },[])
    
   return (
-    <div className="grid grid-cols-2 gap-[5.62rem] justify-items-center mt-[2.19rem]">
+    <div className="grid grid-cols-2 gap-[5.62rem] justify-items-center mt-[2.19rem] xl:gap-2 lg:grid lg:grid-cols-7  md:grid md:grid-rows-7 md:grid-cols-1 2xl:w-full box-border overflow-hidden ">
 
-
-      <div  className="  max-w-[31.25rem] max-h-[50.625rem] ">
+      <div className="  mt-[2.19rem] mb-[3.75rem]  md:row-span-1 md:mb-0 hidden md:block  " >
+          <img className="h-[100%]"src={formgirlimage} alt="girlimg"/>
+        </div>
+      <div  className="  max-w-[31.25rem] max-h-[50.625rem] formikdiv ml-[6.56rem] mt-[2.19rem] mb-[3.75rem] md:row-span-6   md:ml-1 md:mt-1 sm:w-screen sm:place-items-center sm:grid sm:grid-cols-1 sm:m-auto lg:col-span-4  ">
       <Formik
     initialValues={initialValues}
     validationSchema = {validationSchema}
     onSubmit = {onSubmit}>
-        <Form  className="max-w-[31.25rem] max-h-[50.625rem] ">
-        <div className='flex gap-x-[1.88rem]'>       
+        <Form  className="max-w-[31.25rem] max-h-[50.625rem] flex flex-col justify-center items-center ">
+        <div className='flex gap-x-[1.88rem] xl:gap-x-1 sm:gap-x-[1.88rem]'>       
 
         <div onClick={SignupHandler}
         className={clsx(
             {  "text-white bg-[#484FA2]" : activeButtonIndex===1,
              "text-black" : activeButtonIndex===0
             } ,
-            ' flex justify-center items-center w-[12.5rem] h-[3.125rem] rounded-[0.3125rem]  text-[#fff] text-[1.3125rem] border-[#484FA2] border-[1px] font-semibold leading-1.31 tracking-light ]'
+            ' flex justify-center items-center w-[12.5rem] h-[3.125rem] rounded-[0.3125rem]  text-[#fff] text-[1.3125rem] border-[#484FA2] border-[1px] font-semibold leading-1.31 tracking-light  lg:w-[6.5rem] md:w-[12.5rem] sm:w-[7.5rem] '
             )}>Sign Up</div>
         <div onClick={LoginHandler}
         className={clsx(
             {  "text-white bg-[#484FA2]" : activeButtonLogin===1,
              "text-black" : activeButtonLogin===0
             } ,
-            'flex justify-center items-center w-[12.5rem] h-[3.125rem] rounded-[0.3125rem] border-[1px] border-[#484FA2]  text-[1.3125rem] font-semibold leading-1.31 tracking-lighttext-black')}>Login</div>
+            'flex justify-center items-center w-[12.5rem] h-[3.125rem] rounded-[0.3125rem] border-[1px] border-[#484FA2]  text-[1.3125rem] font-semibold leading-1.31 tracking-lighttext-black md:w-[12.5rem] sm:w-[7.5rem] lg:w-[6.5rem] ')}>Login</div>
 
         </div>
             
           
 
-            <div className='flex flex-col mt-[3.62rem]'>
-                        <Field className="border-[1px] border-[#8a8a8a] max-w-[28.125rem]  h-[3.125rem]  py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem]" type="text" id="name" name="name" placeholder="Full Name *" />
+            <div className='flex flex-col mt-[1.88rem]'>
+                        <Field className="border-[1px] border-[#8a8a8a] max-w-[28.125rem]  h-[3.125rem]  py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem] sm1:min-w-[18rem] flex  mt-[0.75rem] " type="text" id="name" name="name" placeholder="Full Name *" />
                         <ErrorMessage name='name'/>
             </div>
             
@@ -157,14 +193,14 @@ window.google.accounts.id.prompt();
           />
             </div>
 
-             <div className='flex flex-col mt-[3.62rem]'>
+             <div className='flex flex-col '>
             
-                        <Field className="border-[1px]    py-[1.06rem] pl-[1.56rem]    max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] " type="password" name="password" id="password" placeholder="Password*"></Field>
+                        <Field className="border-[1px]    py-[1.06rem] pl-[1.56rem]    max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem]  4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem]   mt-[0.75rem] sm1:min-w-[18rem] " type="password" name="password" id="password" placeholder="Password*"></Field>
                         <ErrorMessage name='password'/>
             </div>
             <div className='flex flex-col mt-[3.62rem]'>
 
-                        <Field className="border-[1px] py-[1.06rem] pl-[1.56rem] max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem] " type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password *"></Field>
+                        <Field className="border-[1px] py-[1.06rem] pl-[1.56rem] max-w-[28.125rem] h-[3.125rem] border-[#8A8A8A] rounded-[0.3125rem]  4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem] sm1:min-w-[18rem] mt-[0.75rem]" type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password *"></Field>
                         <ErrorMessage name='confirmpassword'/>
             </div>
 
@@ -172,7 +208,7 @@ window.google.accounts.id.prompt();
             Already have an account? <span className='text-[#484FA2] text-base font-normal tracking-tight'>Login</span> 
             </div>
 
-            <button type='submit' className='p-4 mt-[3.75rem] max-w-[28.125rem] w-full h-[3.13rem] rounded-[2.5rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight' >Sign Up</button>
+            <button type='submit' className='p-4 mt-[3.75rem] max-w-[28.125rem] w-full h-[3.13rem] rounded-[2.5rem] bg-[#494DA2] text-white text-[1.3125rem] font-semibold leading-1.31 tracking-tight   4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem]  sm1:min-w-[18rem] rounded-[0.3125rem]  leading-1.31 ' >Sign Up</button>
 
 
             <div className=' mt-[1.88rem]'>
@@ -181,8 +217,11 @@ window.google.accounts.id.prompt();
             </svg>
             </div>
 
-            <div   className=' mt-[1.88rem]  w-[28.125rem] h-[3.13rem] flex items-center justify-center'>        
-            <div id="signInDiv"  className=' '></div>
+            <div   className='mt-[1.88rem] 4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem] sm1:min-w-[18rem] h-[3.13rem] flex items-center justify-center  '>        
+                    <div id="signInDiv"  className=' 4xl:min-w-[28.125rem] xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem] sm1:min-w-[18rem] h-[3.13rem]  flex items-center justify-center  xl:hidden '></div>
+                    <div id="signInDiv-xl"  className='flex justify-center items-center 4xl:min-w-[28.125rem] xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem] sm1:min-w-[18rem] h-[3.13rem]   4xl:hidden xl:flex md:hidden'></div>
+                    <div id="signInDiv-md"  className='4xl:hidden 4xl:min-w-[28.125rem] xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem] sm1:min-w-[18rem] h-[3.13rem]  flex items-center justify-center  md:flex sm1:hidden'></div>
+                    <div id="signInDiv-sm1"  className='4xl:hidden 4xl:min-w-[28.125rem] xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem] sm1:min-w-[18rem] h-[3.13rem]  flex items-center justify-center  md:flex  sm1:flex'></div>
             { Object.keys(user).length !== 
           <button onClick={(e) => handleSignOut(e)}>SignOut</button>
  
@@ -200,15 +239,15 @@ window.google.accounts.id.prompt();
             } 
             </div>            
            
-           
-<div className=' flex justify-center max-w-[28.125rem] h-[3.13rem] mt-[1.88rem]'>
+ 
+<div className=' flex m-auto max-w-[28.125rem] mt-[1.88rem] 2xl:mt-4 max-h-[3.125rem] mb-2'>
 <FacebookLogin
          appId="" //APP ID NOT CREATED YET         fields="name,email,picture"   
                     autoLoad     
                    callback={responseFacebook}       
-                     className="w-[28.125rem]   h-[3.13rem]"     
+                     className="w-[28.125rem]   "     
                     render={renderProps => (
-            <button className="flex justify-center items-center gap-[0.75rem] max-w-[25.125rem] w-full max-h-[2.5rem] rounded-full border-[1px] border-[#dad9d9]" onClick={renderProps.onClick}><span className='inline-block w-[25px] h-[25px] text-base font-medium leading-4 tracking-tight'> <img src={facebooklogo } alt="facebooklogin"  /></span>Sign up with Facebook</button>
+            <button className="p-2 flex justify-center items-center gap-[0.75rem] max-w-[25.125rem] w-full  rounded-full border-[1px] border-[#dad9d9]" onClick={renderProps.onClick}><span className='inline-block w-[25px] h-[25px] text-base font-medium leading-4 tracking-tight'> <img src={facebooklogo } alt="facebooklogin"  /></span>Sign up with Facebook</button>
           )}
       />
 </div>
@@ -218,7 +257,7 @@ window.google.accounts.id.prompt();
 
       </div>  
 
-        <div className="shadow-my_shadow rounded-[2rem] border-2 border-orange-400 max-w-[39.75rem max-h[50.2075]]" >
+        <div className="shadow-my_shadow rounded-[2rem] border-2 border-orange-400 max-w-[39.75rem max-h[50.2075]] md:hidden 4xl:block shadow-my_shadow rounded-[2rem]  max-w-[28rem] w-full " >
           <img className="h-[100%] rounded-[2rem]" src={formgirlimage} alt="girlimg"/>
         </div>
         
