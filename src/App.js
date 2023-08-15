@@ -24,9 +24,9 @@ import AboutUsWithLogin from "./Component/AboutUsWithLogin";
 function App() {
   return (
     <main className="container-snap  h-screen box-border w-screen text-base" >
-    
+{/*     
       <DummyHeaderForSignupForm/>
-     <SignupForm/>  
+     <SignupForm/>   */}
      {/* <SignupForm1/> */}
      {/* <Header/>
      <Categories/>
@@ -37,9 +37,9 @@ function App() {
      {/* <SetUpYourStyle/> */}
      
     
-      {/* <HeaderAfterLogin /> */}
+      <HeaderAfterLogin />
       {/* <AboutUsWithLogin /> */}
-      {/* <BodyTermandCondtions /> */}
+      <BodyTermandCondtions />
       {/* <Header />
 
 

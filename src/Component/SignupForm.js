@@ -170,7 +170,7 @@ window.google.accounts.id.prompt();
 return (
   <div className=" grid grid-cols-2 gap-[5.62rem] justify-items-center mt-[0.5rem] xl:gap-2 lg:grid lg:grid-cols-7  md:grid md:grid-rows-7 md:grid-cols-1 2xl:w-full box-border overflow-hidden ">
 
-    <div className="mx-auto mt-[0.5rem] md:max-w-[28.25rem] mb-[3.75rem] md:row-span-1 md:mb-0 4xl:hidden md:block md:col-span-3 sm2:ml-2 rounded-[2rem]" >
+    <div className=" md:ml-3 md:mr-1 mt-[0.5rem] md:max-w-[28.25rem] mb-[3.75rem] md:row-span-1 md:mb-0 4xl:hidden md:block md:col-span-3 sm2:ml-2 rounded-[2rem]" >
         <img className="h-[100%] rounded-[2rem] "src={formgirlimage} alt="girlimg"/>
       </div>
     <div  className=" max-w-[31.25rem]  max-h-[50.625rem] lg:ml-[2rem] ml-[6.56rem] mt-[0.5rem] mb-[1rem] md:row-span-6   md:ml-1 md:mt-1 sm:w-screen sm:place-items-center sm:grid sm:grid-cols-1 sm:m-auto lg:col-span-4  ">
