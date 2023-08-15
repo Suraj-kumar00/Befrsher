@@ -80,7 +80,7 @@ function HeaderAfterLogin() {
           <li className=" cursor-pointer ">Seasonal Wear</li>
         </ul>
         <ul className="flex  ">
-          <li className="w-[0.063rem] h-[1.688rem] bg-[#8A8A8A] flex ml-[16.31rem]  mr-[1.69rem]" />
+          <li className="w-[0.063rem] h-[1.688rem] bg-[#8A8A8A] flex ml-[25.31rem]  mr-[1.69rem]" />
           <img clasName="h-3.5 w-[0.5625rem] " src={Wishlist} alt="Wishlist" />
           <ul className="flex gap-[2.5rem]">
             <li className="flex gap-[2.5rem] ml-[0.83rem]">Style list </li>
