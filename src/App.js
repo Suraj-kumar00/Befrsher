@@ -13,17 +13,22 @@ import HeroSection from "./Component/HeroSection";
 import SignupForm from "./Component/SignupForm";
 import LoginForm from "./Component/LoginForm";
 import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
-import SignupForm1 from "./Component/SignupForm1";
 import HeaderForSignUpPage from "./Component/HeaderForSignUpPage";
 import SetUpYourStyle from "./Component/SetUpYourStyle";
 import HeaderAfterLogin from "./Component/HeaderAfterLogin";
 import BodyTermandCondtions from "./Component/BodyTermandCondtions";
 import AboutUsWithLogin from "./Component/AboutUsWithLogin";
+import HeaderWithoutLogin from "./Component/HeaderWithoutLogin";
+import HeaderHelpCenterHome from "./Component/HeaderHelpCenterHome";
+import BodyHelpCenterHome from "./Component/BodyHelpCenterHome";
 
 function App() {
   return (
     <main>
-      {/* <HeaderAfterLogin />
+      <HeaderHelpCenterHome />
+      <BodyHelpCenterHome />
+      {/* <HeaderAfterLogin /> */}
+      {/* <HeaderWithoutLogin />
       <AboutUsWithLogin /> */}
       {/* <BodyTermandCondtions /> */}
       {/* <Header />
@@ -43,15 +48,15 @@ function App() {
       <WhyOnlyWe />
       <BecomeSeller />
       <InstagramComp />
-      <Newsletter /> */}
+      <Newsletter />
 
-      <DummyHeaderForSignupForm />
+      {/* <DummyHeaderForSignupForm />
       <SignupForm />
       <Header />
 
-      <LoginForm />
-      <SetUpYourStyle />
-      {/* <Footer /> */}
+      <LoginForm /> */}
+      {/* <SetUpYourStyle /> */}
+      <Footer />
     </main>
   );
 }
