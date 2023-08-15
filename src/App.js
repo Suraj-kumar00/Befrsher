@@ -33,6 +33,7 @@ function App() {
       {/* <BodyTermandCondtions /> */}
       {/* <Header />
 
+
       <DummyHeaderForSignupForm />
       <SignupForm1 />
       <HeaderForSignUpPage />
@@ -50,13 +51,18 @@ function App() {
       <InstagramComp />
       <Newsletter />
 
+<<<<<<< HEAD
       {/* <DummyHeaderForSignupForm />
       <SignupForm />
       <Header />
+=======
+      
+>>>>>>> 8a5ca6a18c66a1bde29888c11cd4d2e6ea32f124
 
       <LoginForm /> */}
       {/* <SetUpYourStyle /> */}
       <Footer />
+
     </main>
   );
 }

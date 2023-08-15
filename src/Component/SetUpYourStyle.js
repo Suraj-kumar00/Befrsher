@@ -172,6 +172,7 @@ function SetUpYourStyle() {
               </div>
             </div>
 
+<<<<<<< HEAD
             <div className="flex 4xl:flex-row 4xl:justify-between  md:flex-col mt-[0.8rem] md:mt-5">
               <div className="flex flex-col   ">
                 <Field
@@ -180,6 +181,66 @@ function SetUpYourStyle() {
                   id="city"
                   name="city"
                   placeholder="City *"
+=======
+          <div className='flex flex-col mt-[0.8rem] sm1:mt-4 '>
+                      <Field className=" flex justify-center items-center  border-[1px] border-[#8a8a8a]  4xl:max-w-full 2xl:max-h-[2.125rem]  4xl:max-h-[6.125rem] 4xl:h-full  py-[1.06rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem]  2xl:text-[1rem] lg:text-[0.8rem] xl:text-base" onInput={validateDateString} type="text" id="dob" name="dob" placeholder="Date Of Birth *(mm/dd/yyyy)" />
+                      <ErrorMessage name='dob' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
+          </div>
+          
+       
+
+          <div className="flex flex-col justify-start mt-[0.8rem] sm1:mt-4">    
+               <p className='text-[#8a8a8a] 2xl:text-[1rem] font-medium leading-4 -tracking-tight 4xl:text-[1.8rem] 2xl:mb-1 4xl:mb-2 text-left'>Gender *</p>
+                <div className="flex  4xl:justify-between 4xl:gap-8 md:gap-2 4xl:items-center  mt-[0.2rem] ">
+                            <button type="button"
+                              className=' flex justify-center items-center lg:w-[18rem] md:mt-1 4xl:text-[1.5rem] 4xl:py-[1.3rem] 4xl:px-[2rem]  lg:px-2 2xl:max-w-full md:w-full   4xl:max-w-[18rem] max-h-[15.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[.5rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
+                              name="Male"
+                              onClick={(event) => handleClick(event, "Male")}
+                            >
+                              Male
+                            </button> 
+
+                             <button type="button"
+                              className= 'lg:px-2 md:w-full flex justify-center lg:w-[18rem] items-center md:mt-1 4xl:text-[1.5rem] 4xl:py-[1.3rem] 4xl:px-[2rem]   2xl:max-w-full 4xl:max-w-[18rem] max-h-[55.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[0.5rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem]'
+
+                              name="Female"
+                            >
+                              Female
+                            </button>
+                             <button type="button"
+                              className='md:w-full 4x:max-h-[4.125rem]  flex justify-center lg:w-[18rem] items-center md:mt-1 4xl:text-[1.5rem] 4xl:py-[1.3rem] 4xl:px-[2rem]  lg:px-2 2xl:max-w-full  4xl:max-w-[18rem] max-h-[55.8125rem] border-[#8a8a8a] border-[0.06rem] 2xl:py-[0.5rem] px-[2.63rem] 2xl:text-[1rem] font-normal leading-4 -tracking-tight rounded-[0.3125rem] '
+                              name="Special"
+                            >
+                              Special
+                            </button>
+                </div>
+         
+
+          </div>
+          
+          <div className='flex 4xl:flex-row 4xl:justify-between  md:flex-col mt-[0.8rem] md:mt-5'>
+                  <div className='flex flex-col   '>
+                  <Field className="flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem]  2xl:max-w-[10rem] 2xl:max-h-[2.125rem] 4xl:max-h-[4.125rem] py-[1.03rem]  pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="city" name="city" placeholder="City *" />
+                  <ErrorMessage name='city' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
+                  </div>
+                  <div className='flex flex-col '>
+                  <Field className=" md:mt-1 sm:mt-[0.8rem] flex text-[#8a8aa8] border-[0.06rem] border-[#8a8a8a] md:max-w-full  4xl:max-w-[19rem] 2xl:max-w-[10rem]  2xl:max-h-[2.125rem] 4xl:max-h-[4.125rem] py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="number" id="area" name="area" placeholder="Pincode *" />
+                            <ErrorMessage name='area' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
+                  </div>
+          </div>
+
+          <div className='flex flex-col mt-[0.8rem] md:mt-5'>
+                <Field className="text-[#8a8aa8]  border-[0.06rem] border-[#8a8a8a] lg:max-w-full 4xl:max-w-full  2xl:max-h-[2.125rem] 4xl:max-h-[4.125rem] w-full py-[1.03rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base"  type="text" id="whatsappnum" name="whatsappnum" placeholder="Whatsapp &#10; number *" />
+                <ErrorMessage name='whatsappnum' component="div" className="text-red-500 2xl:text-xs italic 4xl:text-lg"/>
+          </div>
+
+          <div className='flex flex-col mt-[0.8rem] md:mt-5 4xl:max-w-full 4xl:text-[1.5rem] 2xl:text-[1rem] lg:text-[0.8rem] xl:text-base'>
+                  <MyTextArea
+                  label=""
+                  name="bio"
+                  rows="2"
+                  placeholder="Bio"
+>>>>>>> 8a5ca6a18c66a1bde29888c11cd4d2e6ea32f124
                 />
                 <ErrorMessage
                   name="city"
