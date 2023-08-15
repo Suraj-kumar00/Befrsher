@@ -11,8 +11,8 @@ import TrendNearrYou from "./Component/TrendNearrYou";
 import Categories from "./Component/Categories";
 import HeroSection from "./Component/HeroSection";
 import SignupForm from "./Component/SignupForm";
-import SignupForm1 from "./Component/SignupForm1"
-import LoginForm from "./Component/LoginForm";
+
+import LoginForm from "./Component/LoginForm"
 import DummyHeaderForSignupForm from "./Component/dummyHeaderForSignupForm";
 import SignupForm1 from "./Component/SignupForm1";
 import HeaderForSignUpPage from "./Component/HeaderForSignUpPage";
@@ -36,9 +36,9 @@ function App() {
      {/* <LoginForm/> */}
      {/* <SetUpYourStyle/> */}
      
-    <main>
-      <HeaderAfterLogin />
-      <AboutUsWithLogin />
+    
+      {/* <HeaderAfterLogin /> */}
+      {/* <AboutUsWithLogin /> */}
       {/* <BodyTermandCondtions /> */}
       {/* <Header />
 
@@ -64,10 +64,10 @@ function App() {
 
       {/* <LoginForm/> */}
       {/* <SetUpYourStyle/> */}
-      <Footer />
+      {/* <Footer /> */}
 
     </main>
   );
 }
 
-export default App;
+export default App
