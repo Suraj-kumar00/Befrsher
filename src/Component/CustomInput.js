@@ -7,7 +7,8 @@ const CustomInput = ({ label, ...props }) => {
     <>
       <label className="text-black font-medium leading-4">{label}</label>
       <input
-      className="border-[1px]  border-[#8a8a8a] 4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem]  md:min-w-[34rem] sm:min-w-[24rem] sm1:min-w-[18rem]  h-[3.125rem] max-h-[3.125rem] rounded-[0.3125rem]  mt-[0.75rem]"
+      className="border-[1px]  flex  py-[1.06rem] pl-[1.56rem] xl:py-[0.8rem] max-h-[3.125rem]  max-w-[28.125rem]
+      border-[#8A8A8A] rounded-[0.3125rem]"
 
         {...field}
         {...props}

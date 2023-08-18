@@ -24,22 +24,22 @@ import AboutUsWithLogin from "./Component/AboutUsWithLogin";
 function App() {
   return (
     <main className="container-snap  h-screen box-border w-screen text-base" >
-{/*     
-      <DummyHeaderForSignupForm/>
-     <SignupForm/>   */}
+    
+      {/* <DummyHeaderForSignupForm/> */}
+     {/* <SignupForm/>   */}
      {/* <SignupForm1/> */}
      {/* <Header/>
      <Categories/>
      <HeroSection/>
      <HeaderForSignUpPage/> */}
 
-     {/* <LoginForm/> */}
+     <LoginForm/>
      {/* <SetUpYourStyle/> */}
      
     
-      <HeaderAfterLogin />
+      {/* <HeaderAfterLogin /> */}
       {/* <AboutUsWithLogin /> */}
-      <BodyTermandCondtions />
+      {/* <BodyTermandCondtions /> */}
       {/* <Header />
 
 
