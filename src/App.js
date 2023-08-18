@@ -33,10 +33,13 @@ function App() {
      <Categories/>
      <HeroSection/>
      <HeaderForSignUpPage/> */}
+
       <LoginForm />
       {/* <SetUpYourStyle/> */}
+
       {/* <HeaderAfterLogin /> */}
       {/* <AboutUsWithLogin /> */}
+      {/* <BodyTermandCondtions /> */}
       {/* <BodyTermandCondtions /> */}
       {/* <Header />
       <DummyHeaderForSignupForm />
