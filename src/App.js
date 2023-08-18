@@ -24,7 +24,7 @@ import BodyHelpCenterHome from "./Component/BodyHelpCenterHome";
 
 function App() {
   return (
-    <main className="container-snap  h-screen box-border w-screen text-base">
+    <main>
       {/*     
       <DummyHeaderForSignupForm/>
      <SignupForm/>   */}
@@ -33,11 +33,11 @@ function App() {
      <Categories/>
      <HeroSection/>
      <HeaderForSignUpPage/> */}
-      {/* <LoginForm/> */}
+      <LoginForm />
       {/* <SetUpYourStyle/> */}
-      <HeaderAfterLogin />
+      {/* <HeaderAfterLogin /> */}
       {/* <AboutUsWithLogin /> */}
-      <BodyTermandCondtions />
+      {/* <BodyTermandCondtions /> */}
       {/* <Header />
       <DummyHeaderForSignupForm />
       <SignupForm1 />
@@ -56,7 +56,7 @@ function App() {
       <Newsletter />
       {/* <LoginForm/> */}
       {/* <SetUpYourStyle/> */}
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
