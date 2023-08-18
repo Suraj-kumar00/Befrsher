@@ -24,6 +24,11 @@ import BodyHelpCenterHome from "./Component/BodyHelpCenterHome";
 
 function App() {
   return (
+    <main className="container-snap  h-screen box-border w-screen text-base">
+      {/* <DummyHeaderForSignupForm/> */}
+      <SignupForm />
+      {/* <SignupForm1/> */}
+      {/* <Header/>
     <main>
       {/*     
       <DummyHeaderForSignupForm/>
@@ -34,7 +39,7 @@ function App() {
      <HeroSection/>
      <HeaderForSignUpPage/> */}
 
-      <LoginForm />
+      {/* <LoginForm /> */}
       {/* <SetUpYourStyle/> */}
 
       {/* <HeaderAfterLogin /> */}
