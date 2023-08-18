@@ -9,13 +9,13 @@ import { useState } from 'react';
 import {Formik,Form,Field,ErrorMessage} from 'formik'
 import * as Yup from 'yup'
 import YupPassword from 'yup-password';
+import right from "../Images/rightgreenbackground.svg"
 YupPassword(Yup);
 
 
 
 const initialValues={
   name:'',
-  email:'',
   phone:'',
   otp:'',
   password:'',
@@ -46,7 +46,11 @@ function SignupForm() {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0);
   const [activeButtonLogin, setActiveButtonLogin] = useState(0);
   const [user,setUser] = useState({ })
-
+  const [otpField,setOtpField] = useState(0)
+  const [rightField,setRightField] = useState(0)
+  // const [submitField,setSubmitField] = useState(0)
+  console.log("rightfield",rightField)
+console.log("otp",otpField)
   const SignupHandler = () =>{
       setActiveButtonIndex(1) ;
        setActiveButtonLogin(0);
@@ -56,20 +60,12 @@ function SignupForm() {
       setActiveButtonLogin(1) ;
       setActiveButtonIndex(0);
   }
-
-  const showotpfield = () => {
-    return(
-     <div className='flex flex-col '>
-               <div className="flex  items-center border-[1px] border-[#8A8A8A] border-black rounded-[0.3125rem]  pl-[0.2rem] mt-[1rem]        max-w-[28.125rem] h-[3rem]   4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem]    sm1:min-w-[18rem]">  
-                         <div className = 'ml-[1.56rem]'>Enter otp</div>
-                         <Field className="flex justify-center items-center ml-[1rem] py-[0.3rem] px-1 focus:outline-none" type="text" name="otp" id="otp" placeholder="xxxxxx"></Field>
-                         <button type="button" className="flex justify-center items-center ml-[5rem] text-[rem] text-[#484FA2]">Submit</button>
-               </div>
-               <ErrorMessage name='otp'/>
-   </div> 
-    ) 
   
+  const resetField = () => {
+    // setSubmitField(0)
+    setOtpField(0)
   }
+
   const responseGoogle = (response) =>{
 
       console.log(response.credential)
@@ -168,17 +164,17 @@ window.google.accounts.id.prompt();
     
  
 return (
-  <div className=" grid grid-cols-2 gap-[5.62rem] justify-items-center mt-[0.5rem] xl:gap-2 lg:grid lg:grid-cols-7  md:grid md:grid-rows-7 md:grid-cols-1 2xl:w-full box-border overflow-hidden ">
+  <div className=" grid  sm:m-auto md:gap-x-0  sm:gap-y-1 sm:place-items-center 4xl:grid-cols-2 gap-[5.62rem] justify-items-center mt-[0.5rem]  lg:grid lg:grid-cols-7 lg:gap-10 xl:gap-10  md:grid md:grid-rows-7 md:grid-cols-1  2xl:w-full box-border overflow-hidden ">
 
-    <div className=" md:ml-3 md:mr-1 mt-[0.5rem] md:max-w-[28.25rem] mb-[3.75rem] md:row-span-1 md:mb-0 4xl:hidden md:block md:col-span-3 sm2:ml-2 rounded-[2rem]" >
-        <img className="h-[100%] rounded-[2rem] "src={formgirlimage} alt="girlimg"/>
+    <div className="flex justify-items-center items-center sm:mb-0 ml-[6.56rem]  md:mx-auto  mt-[0.5rem] sm:max-w-[25.25rem] md:max-w-[28.25rem] md:row-span-1 md:mb-0 4xl:hidden md:block md:col-span-3  rounded-[2rem]" >
+        <img className="  w-full h-[100%] rounded-[2rem] "src={formgirlimage} alt="girlimg"/>
       </div>
-    <div  className=" max-w-[31.25rem]  max-h-[50.625rem] lg:ml-[2rem] ml-[6.56rem] mt-[0.5rem] mb-[1rem] md:row-span-6   md:ml-1 md:mt-1 sm:w-screen sm:place-items-center sm:grid sm:grid-cols-1 sm:m-auto lg:col-span-4  ">
+    <div  className="sm:ml-[0rem] sm:mx-auto max-w-[31.25rem]  sm:max-w-full sm:justify-items-center max-h-[50.625rem] lg:ml-[2rem] ml-[6.56rem] mt-[0.5rem] mb-[1rem] md:row-span-6   md:ml-1 md:mt-1 sm:w-screen  sm:grid sm:grid-cols-1 lg:col-span-4 sm2:mx-8 ">
     <Formik
   initialValues={initialValues}
   validationSchema = {validationSchema}
   onSubmit = {onSubmit}>
-      <Form  className="sm2:max-w-[317px]  max-w-[28.25rem] max-h-[50.625rem] flex flex-col sm1:max-w-[372px]">
+      <Form  className="mt-0  max-w-[28.25rem] max-h-[50.625rem] flex flex-col sm1:max-w-[372px] ">
       <div className='flex justify-between xl:gap-8'>       
 
       <div onClick={SignupHandler}
@@ -200,36 +196,62 @@ return (
         
 
           <div className='flex flex-col mt-[1rem]'>
-                      <Field className="flex border-[1px] border-[#8a8a8a] max-w-[28.125rem]  h-[3rem]  py-[0.8rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[0rem] sm:min-w-[24rem] sm1:min-w-[0rem]" type="text" id="name" name="name" placeholder="Full Name *" />
+                      <Field className="flex border-[1px] border-[#8a8a8a] max-w-[28.125rem]  h-[3rem]  py-[0.8rem] pl-[1.56rem] rounded-[0.3125rem] 4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[0rem] sm:min-w-[24rem] sm1:min-w-[0rem]  focus:outline-none" type="text" id="name" name="name" placeholder="Full Name *" />
                       <ErrorMessage name='name'/>
           </div>
           
           <div className='flex flex-col  '>
                         <div className=' flex justify-between  mt-[1rem] border-[1px]  border-[#8a8a8a] py-[0.2rem]  pl-[1.56rem]  4xl:max-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem]  md:min-w-[0rem] sm:min-w-[24rem] sm1:min-w-[18rem]  h-[3.125rem] max-h-[3rem] rounded-[0.3125rem] '>
                         <Field className="flex justify-center  focus:outline-none " type="text" name="phone" id="phone" placeholder="Phone*"></Field>
-                        <button type="button" onClick={() => alert('hello')}className="flex  items-center text-[1rem] text-[#484FA2] mr-8 ">Verify</button>
+                 {    
+                    rightField === 0 ?
+                    <button type="button" onClick={() => {
+                 
+                      setOtpField(1)
+                      console.log("dddd",otpField)}} className="flex  items-center text-[1rem] text-[#484FA2] mr-8 ">Verify</button>
+                      : 
+                      <div className="flex  items-center mr-8">
+                      <img src={right} alt="hh"></img>
+                    </div>
+
+                 }        
+                 
+                        
                         </div>
+                       
                         <ErrorMessage name='phone'/>  
           </div>
 
-     {/*     <div id='otp' className='flex flex-col '>
-               <div className="flex  items-center border-[1px] border-[#8A8A8A] border-black rounded-[0.3125rem]  pl-[0.2rem] mt-[1rem]        max-w-[28.125rem] h-[3rem]   4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[34rem] sm:min-w-[24rem]    sm1:min-w-[18rem]">  
-                         <div className = 'ml-[1.56rem]'>Enter otp</div>
-                         <Field className="flex justify-center items-center ml-[1rem] py-[0.3rem] px-1 focus:outline-none" type="text" name="otp" id="otp" placeholder="xxxxxx"></Field>
-                         <button type="button" className="flex justify-center items-center ml-[5rem] text-[rem] text-[#484FA2]">Submit</button>
+         <div id='otp' className={clsx(
+          {
+            "block flex-col": otpField===1,
+            " hidden flex-col": otpField===0,
+
+          },'flex flex-col '
+         )}
+          >
+               <div className="flex  items-center rounded-[0.3125rem]  pl-[0.2rem] lg:pl-0 max-w-[28.125rem]   4xl:min-w-[28.125rem]     sm1:min-w-[18rem]flex justify-between  mt-[1rem] border-[1px]  border-[#8a8a8a] py-[0.2rem]    4xl:max-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem]  md:min-w-[0rem] sm:min-w-[24rem] sm1:min-w-[18rem]  h-[3.125rem] max-h-[3rem]">  
+                         <div className = '4xl:ml-[1.56rem]   4xl:min-w-[5rem] text-[#484FA2]'>Enter otp</div>
+                         <Field className="flex justify-center items-center sm2:w-[100px] sm2:pl-4 4xl:ml-[1rem] sm2:ml-1 sm1:w-[80px] py-[0.3rem] 4xl:px-2  focus:outline-none " type="text" name="otp" id="otp" placeholder="xxxxxx"></Field>
+                         <button type="submit" onClick={() => {
+                          setOtpField(0)
+                          setRightField(1);
+                          onSubmit()
+                          
+                         }} className="flex justify-center items-center ml-[5rem]  text-[#484FA2] 4xl:mr-7 lg:ml-[3rem] sm:ml-8 sm2:ml-1" >Submit</button>
                </div>
                <ErrorMessage name='otp'/>
-   </div> */}
+   </div>
 
            <div className='flex flex-col mt-[1rem]'>
           
-                      <Field className="flex border-[1px] py-[0.8rem] pl-[1.56rem] max-w-[28.125rem] max-h-[3rem] border-[#8A8A8A] rounded-[0.3125rem]  4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[0rem] sm:min-w-[24rem]  sm1:min-w-[0rem] " type="password" name="password" id="password" placeholder="Password*"></Field>
+                      <Field className="flex border-[1px] py-[0.8rem] pl-[1.56rem] max-w-[28.125rem] max-h-[3rem] border-[#8A8A8A] rounded-[0.3125rem]  4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[0rem] sm:min-w-[24rem]  sm1:min-w-[0rem]   focus:outline-none" type="password" name="password" id="password" placeholder="Password*"></Field>
                       <ErrorMessage name='password'/>
           </div>
 
           <div className='flex flex-col mt-[1rem]'>
 
-                      <Field className="flex border-[1px] py-[0.8rem] pl-[1.56rem] max-w-[28.125rem] h-[3rem] border-[#8A8A8A] rounded-[0.3125rem]  4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[0rem] sm:min-w-[24rem] sm1:min-w-[18rem] " type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password *"></Field>
+                      <Field className="flex border-[1px] py-[0.8rem] pl-[1.56rem] max-w-[28.125rem] h-[3rem] border-[#8A8A8A] rounded-[0.3125rem]  4xl:min-w-[28.125rem]  xl:min-w-[24rem] lg:min-w-[16.6rem] md:min-w-[0rem] sm:min-w-[24rem] sm1:min-w-[18rem]  focus:outline-none" type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password *"></Field>
                       <ErrorMessage name='confirmpassword'/>
           </div>
 

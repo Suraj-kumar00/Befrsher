@@ -26,14 +26,14 @@ function App() {
     <main className="container-snap  h-screen box-border w-screen text-base" >
     
       {/* <DummyHeaderForSignupForm/> */}
-     {/* <SignupForm/>   */}
+     <SignupForm/>  
      {/* <SignupForm1/> */}
      {/* <Header/>
      <Categories/>
      <HeroSection/>
      <HeaderForSignUpPage/> */}
 
-     <LoginForm/>
+     {/* <LoginForm/> */}
      {/* <SetUpYourStyle/> */}
      
     
